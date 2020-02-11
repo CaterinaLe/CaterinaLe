@@ -4,8 +4,8 @@
 
 <head>
     <meta charset="utf-8">
-    <meta name="keywords" content="[转]告别百度网盘！利用OneIndex-Serverless无成本搭建属于你自己的网盘, Hexo">
-    <meta name="description" content="原文链接：https://zhuanlan.zhihu.com/p/74538287?utm_source=qq&amp;amp;utm_medium=social&amp;amp;utm_oi=957630127903924224项目GitHub：htt">
+    <meta name="keywords" content="用matlab画出同一轨道平面下的三体运行轨迹, Hexo">
+    <meta name="description" content="一直想模拟一下三体运行，这次终于用matlab做了个小程序，代码附在文后。    思路：    假设在极短的时间dt内，天体的速度(vx,vy)不会改变，则dt时间后天体的坐标x’=x+vxdt，y’=y+vydt；    假设在极短的时间">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
     <meta name="renderer" content="webkit|ie-stand|ie-comp">
@@ -13,7 +13,7 @@
     <meta name="format-detection" content="telephone=no">
     <meta name="apple-mobile-web-app-capable" content="yes">
     <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
-    <title>[转]告别百度网盘！利用OneIndex-Serverless无成本搭建属于你自己的网盘 | Hexo</title>
+    <title>用matlab画出同一轨道平面下的三体运行轨迹 | Hexo</title>
     <link rel="icon" type="image/png" href="/favicon.png">
 
     <link rel="stylesheet" type="text/css" href="/libs/awesome/css/all.css">
@@ -303,12 +303,12 @@
 
 
 
-<div class="bg-cover pd-header post-cover" style="background-image: url('/medias/featureimages/20.jpg')">
+<div class="bg-cover pd-header post-cover" style="background-image: url('/medias/featureimages/6.jpg')">
     <div class="container" style="right: 0px;left: 0px;">
         <div class="row">
             <div class="col s12 m12 l12">
                 <div class="brand">
-                    <h1 class="description center-align post-title">[转]告别百度网盘！利用OneIndex-Serverless无成本搭建属于你自己的网盘</h1>
+                    <h1 class="description center-align post-title">用matlab画出同一轨道平面下的三体运行轨迹</h1>
                 </div>
             </div>
         </div>
@@ -423,13 +423,9 @@
             <div class="row tag-cate">
                 <div class="col s7">
                     
-                    <div class="article-tag">
-                        
-                            <a href="/tags/%E8%BD%AC%E8%BD%BD%E3%80%81-%E7%BD%91%E7%9B%98%E3%80%81-%E7%9E%8E%E6%8A%98%E8%85%BE/">
-                                <span class="chip bg-color">转载、 网盘、 瞎折腾</span>
-                            </a>
-                        
-                    </div>
+                          <div class="article-tag">
+                            <span class="chip bg-color">无标签</span>
+                          </div>
                     
                 </div>
                 <div class="col s5 right-align">
@@ -443,21 +439,21 @@
                 
                 <div class="post-date info-break-policy">
                     <i class="far fa-calendar-check fa-fw"></i>更新日期:&nbsp;&nbsp;
-                    2020-02-08
+                    2020-02-11
                 </div>
                 
 
                 
                 <div class="info-break-policy">
                     <i class="far fa-file-word fa-fw"></i>文章字数:&nbsp;&nbsp;
-                    409
+                    1k
                 </div>
                 
 
                 
                 <div class="info-break-policy">
                     <i class="far fa-clock fa-fw"></i>阅读时长:&nbsp;&nbsp;
-                    1 分
+                    4 分
                 </div>
                 
 
@@ -473,11 +469,27 @@
         <hr class="clearfix">
         <div class="card-content article-card-content">
             <div id="articleContent">
-                <p>原文链接：<a href="https://zhuanlan.zhihu.com/p/74538287?utm_source=qq&amp;utm_medium=social&amp;utm_oi=957630127903924224" target="_blank" rel="noopener">https://zhuanlan.zhihu.com/p/74538287?utm_source=qq&amp;utm_medium=social&amp;utm_oi=957630127903924224</a><br>项目GitHub：<a href="https://github.com/LiuChangFreeman/OneIndex-Serverless" target="_blank" rel="noopener">https://github.com/LiuChangFreeman/OneIndex-Serverless</a></p>
-<p>相当于把分享功能很弱鸡的OneDrive变成了像百度云那样拿到链接就可以下载，而且资费还很便宜，月资费抹零后是0元，相当于免费。我照着作者的教程一步步做下来，过程很顺利，最后效果是这样：<br><img src="/2020/02/08/zhuan-zai-gao-bie-bai-du-wang-pan-li-yong-oneindex-serverless-wu-cheng-ben-da-jian-shu-yu-ni-zi-ji-de-wang-pan/%E7%BD%91%E7%9B%98.png" alt="其他人打开分享链接后的界面"><br>用IDM下载速度能达到2MB/s，我这里因为WiFi信号很差（2格），所以只有700-800KB/s<br><img src="/2020/02/08/zhuan-zai-gao-bie-bai-du-wang-pan-li-yong-oneindex-serverless-wu-cheng-ben-da-jian-shu-yu-ni-zi-ji-de-wang-pan/%E9%80%9F%E5%BA%A6.png" alt="下载速度"></p>
-<p>个人免费版的OneDrive存储上限是5G，要想增加上限的话价格非常美丽，作者给出的办法是某宝花5元买一个5T账号。不过我不认同这个做法，因为这些账号大多是一些企业的管理员账号的子账号，管理员账号对这些子账号有完全的控制权，管理员对你的账号能做的包括但不限于：偷窥、上传/下载文件、删除文件、删除账号……指不定哪天存在这个账号上的东西就全没了。</p>
-<p>然后我想起自己有一个教育版账号，存储上限可是1T呐！于是我兴冲冲地把账号换成教育版的，然而。。。无法登录(╯‵□′)╯︵┻━┻      好吧，教程里是说了1T账号无法登录来着。那好吧，就用我的5G账号将就着吧。</p>
-<script>
+                <p>一直想模拟一下三体运行，这次终于用matlab做了个小程序，代码附在文后。<br>    思路：<br>    假设在极短的时间dt内，天体的速度(vx,vy)不会改变，则dt时间后天体的坐标x’=x+vx<em>dt，y’=y+vy</em>dt；<br>    假设在极短的时间dt内，天体的加速度(ax,ay)不会改变，则dt时间后天体的速度vx’=vx+ax<em>dt，vy’=vy+ay</em>dt；<br>    天体受到的引力由万有引力公式求得，除以质量就是加速度，这个都会的，不说了。<br>以下是几次模拟结果：<br><video src="1.mp4 " type="video/mp4" controls="controls" width="100%" height="100%"><br></video><br><video src="10.mp4 " type="video/mp4" controls="controls" width="100%" height="100%"><br></video><br><video src="100.mp4 " type="video/mp4" controls="controls" width="100%" height="100%"><br></video><br><video src="1000.mp4 " type="video/mp4" controls="controls" width="100%" height="100%"><br></video><br>以上四次模拟中三个天体的坐标、位置、速度、加速度等相同，但Δt的值不同，刚开始的轨迹大致相同，但一段时间后的结果完全不一样。</p>
+<video src="日地月.mp4 " type="video/mp4" controls="controls" width="100%" height="100%">
+</video>
+日地月系统，红色是太阳，绿色（可能看不出来）是地球，蓝色是月球。
+
+<p>主程序代码：<br>    clc<br>    clear<br>    dt=10;%极短时间Δt，在此时间内，速度、加速度认为不变，越小越精确<br>    n=1000;%每经过n<em>dt时间在图上画出三个天体的位置，合理增大作图间隔时间能节约时间，推荐n</em>dt=10000<br>    sunm=1.898<em>10^30;%质量参考值1：太阳质量<br>    earm=5.965</em>10^24;%质量参考值2：地球质量<br>    moonm=7.36<em>10^22;%质量参考值3：月球质量<br>    L=1.5</em>10^11;%坐标参考值1：日地距离<br>    r=3.84<em>10^8;%坐标参考值2：月地距离<br>    v=100000;%速度参考值1：地球公转速度<br>    v2=1022;%速度参考值2：月球公转速度<br>    ob1=my_planet(1</em>sunm,0,0,0,0,0,0);%my_planet(质量，x坐标，y坐标，x轴方向的速度，y轴方向的速度，x轴方向的加速度，y轴方向的加速度)<br>    ob2=my_planet(1<em>sunm,L,0,0,v,0,0);<br>    ob3=my_planet(1</em>sunm,L,L,-v,v,0,0);<br>    i=0;<br>    while 1<br>        [ax21,ay21]=gra(ob2,ob1);%天体2对天体1贡献的加速度<br>        [ax31,ay31]=gra(ob3,ob1);%天体3对天体1贡献的加速度<br>        [ax12,ay12]=gra(ob1,ob2);%天体1对天体2贡献的加速度<br>        [ax32,ay32]=gra(ob3,ob2);%天体3对天体2贡献的加速度<br>        [ax13,ay13]=gra(ob1,ob3);%天体1对天体3贡献的加速度<br>        [ax23,ay23]=gra(ob2,ob3);%天体2对天体3贡献的加速度<br>        ob1.ax=ax21+ax31;%天体1沿x轴的加速度<br>        ob1.ay=ay21+ay31;%天体1沿y轴的加速度<br>        ob2.ax=ax12+ax32;%天体2沿x轴的加速度<br>        ob2.ay=ay12+ay32;%天体2沿y轴的加速度<br>        ob3.ax=ax23+ax13;%天体3沿x轴的加速度<br>        ob3.ay=ay23+ay13;%天体3沿y轴的加速度<br>        ob1.x=ob1.x+ob1.vx<em>dt;%x=x+vx</em>dt<br>        ob1.y=ob1.y+ob1.vy<em>dt;%y=y+vy</em>dt<br>        ob2.x=ob2.x+ob2.vx<em>dt;<br>        ob2.y=ob2.y+ob2.vy</em>dt;<br>        ob3.x=ob3.x+ob3.vx<em>dt;<br>        ob3.y=ob3.y+ob3.vy</em>dt;<br>        ob1.vx=ob1.vx+ob1.ax<em>dt;%vx=vx+ax</em>dt<br>        ob1.vy=ob1.vy+ob1.ay<em>dt;%vy=vy+ay</em>dt<br>        ob2.vx=ob2.vx+ob2.ax<em>dt;<br>        ob2.vy=ob2.vy+ob2.ay</em>dt;<br>        ob3.vx=ob3.vx+ob3.ax<em>dt;<br>        ob3.vy=ob3.vy+ob3.ay</em>dt;<br>        if mod(i,n)==0 %每经过n<em>dt时间在图上画出三个天体的位置，合理增大作图间隔时间能节约时间，推荐n</em>dt=10000<br>            plot(ob1.x,ob1.y,’r.’),pause(0.000001);<br>            plot(ob2.x,ob2.y,’g.’),pause(0.000001);<br>            plot(ob3.x,ob3.y,’b.’),pause(0.000001);<br>            hold on;<br>            grid on;<br>        end<br>        i=i+1;<br>    end</p>
+<p>计算加速度：<br>    function [ax,ay] = gra(ob1,ob2)%求天体ob1对ob2贡献的加速度<br>        G=6.754<em>10^(-10);%万有引力常量（瞎设的）<br>        R=sqrt((ob1.x-ob2.x)^2+(ob1.y-ob2.y)^2);%距离<br>        a=G*ob1.m/(R^2);%加速度大小<br>        ax=a</em>(ob1.x-ob2.x)/R;%沿x轴方向的加速度<br>        ay=a*(ob1.y-ob2.y)/R;%沿y轴方向的加速度<br>    end</p>
+<p>定义行星（天体）类：<br>    classdef my_planet %行星类<br>        properties<br>            m;%质量<br>            x;%x坐标<br>            y;%y坐标<br>            vx;%x轴方向的速度<br>            vy;%y轴方向的速度<br>            ax;%x轴方向的加速度<br>            ay;%y轴方向的加速度<br>        end</p>
+<pre><code>    methods
+        function ob= my_planet(m,x,y,vx,vy,ax,ay)
+            ob.m=m;
+            ob.x=x;
+            ob.y=y;
+            ob.vx=vx;
+            ob.vy=vy;
+            ob.ax=ax;
+            ob.ay=ay;
+        end
+    end
+
+end</code></pre><script>
         document.querySelectorAll('.github-emoji')
           .forEach(el => {
             if (!el.dataset.src) { return; }
@@ -520,7 +532,7 @@
                     </i>
                 </span>
                 <span class="reprint-info">
-                    <a href="https://caterinale.github.io/2020/02/08/zhuan-zai-gao-bie-bai-du-wang-pan-li-yong-oneindex-serverless-wu-cheng-ben-da-jian-shu-yu-ni-zi-ji-de-wang-pan/">https://caterinale.github.io/2020/02/08/zhuan-zai-gao-bie-bai-du-wang-pan-li-yong-oneindex-serverless-wu-cheng-ben-da-jian-shu-yu-ni-zi-ji-de-wang-pan/</a>
+                    <a href="https://caterinale.github.io/2020/02/11/yong-matlab-hua-chu-tong-yi-gui-dao-ping-mian-xia-de-san-ti-yun-xing-gui-ji/">https://caterinale.github.io/2020/02/11/yong-matlab-hua-chu-tong-yi-gui-dao-ping-mian-xia-de-san-ti-yun-xing-gui-ji/</a>
                 </span>
             </div>
             <div class="reprint__notice">
@@ -557,11 +569,7 @@
                 <div class="post-meta__tag-list" style="display: inline-block;">
                     
                         <div class="article-tag">
-                            
-                                <a href="/tags/%E8%BD%AC%E8%BD%BD%E3%80%81-%E7%BD%91%E7%9B%98%E3%80%81-%E7%9E%8E%E6%8A%98%E8%85%BE/">
-                                    <span class="chip bg-color">转载、 网盘、 瞎折腾</span>
-                                </a>
-                            
+                            <span class="chip bg-color">无标签</span>
                         </div>
                     
                 </div>
@@ -600,9 +608,10 @@
 <article id="prenext-posts" class="prev-next articles">
     <div class="row article-row">
         
-        <div class="article col s12 m6" data-aos="fade-up">
+        <div class="article col s12 m6" data-aos="fade-up" data-aos="fade-up">
             <div class="article-badge left-badge text-color">
-                <i class="fas fa-chevron-left"></i>&nbsp;上一篇</div>
+                <i class="far fa-dot-circle"></i>&nbsp;本篇
+            </div>
             <div class="card">
                 <a href="/2020/02/11/yong-matlab-hua-chu-tong-yi-gui-dao-ping-mian-xia-de-san-ti-yun-xing-gui-ji/">
                     <div class="card-image">
@@ -620,9 +629,9 @@
                         
                     </div>
                     <div class="publish-info">
-                        <span class="publish-date">
-                            <i class="far fa-clock fa-fw icon-date"></i>2020-02-11
-                        </span>
+                            <span class="publish-date">
+                                <i class="far fa-clock fa-fw icon-date"></i>2020-02-11
+                            </span>
                         <span class="publish-author">
                             
                             <i class="fas fa-user fa-fw"></i>
@@ -631,6 +640,7 @@
                         </span>
                     </div>
                 </div>
+
                 
             </div>
         </div>
@@ -641,26 +651,24 @@
                 下一篇&nbsp;<i class="fas fa-chevron-right"></i>
             </div>
             <div class="card">
-                <a href="/2020/02/07/zao-yao-zhe-zhi-mu/">
+                <a href="/2020/02/08/zhuan-zai-gao-bie-bai-du-wang-pan-li-yong-oneindex-serverless-wu-cheng-ben-da-jian-shu-yu-ni-zi-ji-de-wang-pan/">
                     <div class="card-image">
                         
                         
-                        <img src="/medias/featureimages/18.jpg" class="responsive-img" alt="造谣者之墓">
+                        <img src="/medias/featureimages/20.jpg" class="responsive-img" alt="[转]告别百度网盘！利用OneIndex-Serverless无成本搭建属于你自己的网盘">
                         
-                        <span class="card-title">造谣者之墓</span>
+                        <span class="card-title">[转]告别百度网盘！利用OneIndex-Serverless无成本搭建属于你自己的网盘</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
                     <div class="summary block-with-text">
                         
-                                                            武汉市公安局 武昌分局 中南路街派出所
-                                            训 诫 书
-                  
+                            原文链接：https://zhuanlan.zhihu.com/p/74538287?utm_source=qq&amp;utm_medium=social&amp;utm_oi=957630127903924224项目GitHub：htt
                         
                     </div>
                     <div class="publish-info">
                             <span class="publish-date">
-                                <i class="far fa-clock fa-fw icon-date"></i>2020-02-07
+                                <i class="far fa-clock fa-fw icon-date"></i>2020-02-08
                             </span>
                         <span class="publish-author">
                             
@@ -673,8 +681,8 @@
                 
                 <div class="card-action article-tags">
                     
-                    <a href="/tags/%E7%89%A2%E9%AA%9A%E3%80%81-%E6%82%B2/">
-                        <span class="chip bg-color">牢骚、 悲</span>
+                    <a href="/tags/%E8%BD%AC%E8%BD%BD%E3%80%81-%E7%BD%91%E7%9B%98%E3%80%81-%E7%9E%8E%E6%8A%98%E8%85%BE/">
+                        <span class="chip bg-color">转载、 网盘、 瞎折腾</span>
                     </a>
                     
                 </div>
