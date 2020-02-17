@@ -5,7 +5,8 @@
 <head>
     <meta charset="utf-8">
     <meta name="keywords" content="图片转字符图：从不会到不屑———在matlab命令行窗口中输出bad apple动画, Hexo">
-    <meta name="description" content="某日同学给我看dy上一个短视频，是将视频转换成ASKII字符输出，这都是十年前的网友玩的了，怎么能难倒我呢，我决定用matlab也做一个。不过饭要一口一口吃，我先做了一个小程序，读取电脑中的图片，转换为字符图，输出到matlab命令行窗口并">
+    <meta name="description" content="
+某日同学给我看dy上一个短视频，是将视频转换成ASKII字符输出，这都是十年前的网友玩的了，怎么能难倒我呢，我决定用matlab也做一个。不过饭要一口一口吃，我先做了一个小程序，读取电脑中的图片，转换为字符图，输出到matlab命令行窗口">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
     <meta name="renderer" content="webkit|ie-stand|ie-comp">
@@ -26,7 +27,10 @@
 
     <script src="/libs/jquery/jquery.min.js"></script>
     
-<link rel="stylesheet" href="/css/prism-tomorrow.css" type="text/css"></head>
+<link rel="stylesheet" href="/css/prism-tomorrow.css" type="text/css"><link rel="stylesheet" href="\assets\css\APlayer.min.css" class="aplayer-style-marker">
+<script src="\assets\js\APlayer.min.js" class="aplayer-script-marker"></script>
+<script src="\assets\js\Meting.min.js" class="meting-script-marker"></script>
+</head>
 
 
 <body>
@@ -490,13 +494,14 @@
         <hr class="clearfix">
         <div class="card-content article-card-content">
             <div id="articleContent">
-                <p>某日同学给我看dy上一个短视频，是将视频转换成ASKII字符输出，这都是十年前的网友玩的了，怎么能难倒我呢，我决定用matlab也做一个。不过饭要一口一口吃，我先做了一个小程序，读取电脑中的图片，转换为字符图，输出到matlab命令行窗口并写入txt文件中。</p>
+                <div id="aplayer-FmsUJCyt" class="aplayer aplayer-tag-marker meting-tag-marker" data-id="7428376268" data-server="tencent" data-type="playlist" data-mode="circulation" data-autoplay="false" data-mutex="true" data-listmaxheight="340px" data-preload="auto" data-theme="#555"></div>
+<p>某日同学给我看dy上一个短视频，是将视频转换成ASKII字符输出，这都是十年前的网友玩的了，怎么能难倒我呢，我决定用matlab也做一个。不过饭要一口一口吃，我先做了一个小程序，读取电脑中的图片，转换为字符图，输出到matlab命令行窗口并写入txt文件中。</p>
 <!-- toc -->
 <h3 id="原理"><a href="#原理" class="headerlink" title="原理"></a>原理</h3><p>每个字符点阵，比如“W”和“-”,它们黑色所占的比例不同，给人视觉上带来的效果就是“W”比“-”更黑，我们用“&amp;#@”等代替图片中较黑（灰度值低）的像素，用“`-.”等代替图片中较白（灰度值高）的像素，这样，图片就被转换成了字符图。那么，合理的灰度值-字符对应表就是整个程序的关键。我采用的灰度-字符变换关系如下所示：<br>    <img src="/2020/02/17/tu-pian-zhuan-zi-fu-tu-cong-bu-hui-dao-bu-xie-zai-matlab-ming-ling-xing-chuang-kou-zhong-shu-chu-bad-apple-dong-hua/%E7%81%B0%E5%BA%A6.jpg" alt="灰度-字符变换关系"></p>
 <!-- toc -->
 <h3 id="黑白字符图"><a href="#黑白字符图" class="headerlink" title="黑白字符图"></a>黑白字符图</h3><p>matlab命令行窗口行距比较大，所以txt显示效果较好，不过输入图片不能过大，因为txt每行的字数有上限，超过就会自动换行，导致图像错乱；而matlab命令行倒不会因为字数限制而导致图像错乱，而它的行距过大的问题可以用每三行像素输出一行字符的办法解决，不过这样也牺牲了行像素。这两种方案都不是特别完美，我更喜欢小图用txt显示，大图用命令行显示，最终效果如下所示（字体设为宋体，字号1）：<br>    <img src="/2020/02/17/tu-pian-zhuan-zi-fu-tu-cong-bu-hui-dao-bu-xie-zai-matlab-ming-ling-xing-chuang-kou-zhong-shu-chu-bad-apple-dong-hua/%E6%95%88%E6%9E%9C1.jpg" alt="字符图-希儿&amp;布洛尼亚"></p>
 <!-- toc -->
-<h3 id="色幻觉"><a href="#色幻觉" class="headerlink" title="色幻觉"></a>色幻觉</h3><p>上图的那种程度不算什么,毕竟彩色图最后变成黑白的字符，总感觉少了什么。然后我在知乎上找到了超神奇的灰度-字符转换关系，如下所示：<br>    <img src="/2020/02/17/tu-pian-zhuan-zi-fu-tu-cong-bu-hui-dao-bu-xie-zai-matlab-ming-ling-xing-chuang-kou-zhong-shu-chu-bad-apple-dong-hua/%E7%81%B0%E5%BA%A6.jpg" alt="另一种灰度-字符变换关系"><br>效果：<br>    <img src="/2020/02/17/tu-pian-zhuan-zi-fu-tu-cong-bu-hui-dao-bu-xie-zai-matlab-ming-ling-xing-chuang-kou-zhong-shu-chu-bad-apple-dong-hua/%E6%95%88%E6%9E%9C2.jpg" alt="字符图-哆啦a梦"><br>仔细看看，是不是感觉有点奇怪：这张图好像是彩色的！<br>把字号改大到6再看看：<br>    <img src="/2020/02/17/tu-pian-zhuan-zi-fu-tu-cong-bu-hui-dao-bu-xie-zai-matlab-ming-ling-xing-chuang-kou-zhong-shu-chu-bad-apple-dong-hua/%E6%95%88%E6%9E%9C2.jpg" alt="放大的字符图-哆啦a梦"><br>没错，黑白字符呈现出了彩色的图像。那个知乎答主说这是一种色幻觉，不过具体原因他没有给出，我也没查到可信的说法。</p>
+<h3 id="色幻觉"><a href="#色幻觉" class="headerlink" title="色幻觉"></a>色幻觉</h3><p>上图的那种程度不算什么,毕竟彩色图最后变成黑白的字符，总感觉少了什么。然后我在知乎上找到了超神奇的灰度-字符转换关系，如下所示：<br>    <img src="/2020/02/17/tu-pian-zhuan-zi-fu-tu-cong-bu-hui-dao-bu-xie-zai-matlab-ming-ling-xing-chuang-kou-zhong-shu-chu-bad-apple-dong-hua/%E7%81%B0%E5%BA%A6.jpg" alt="另一种灰度-字符变换关系"><br>效果：<br>    <img src="/2020/02/17/tu-pian-zhuan-zi-fu-tu-cong-bu-hui-dao-bu-xie-zai-matlab-ming-ling-xing-chuang-kou-zhong-shu-chu-bad-apple-dong-hua/%E6%95%88%E6%9E%9C2.jpg" alt="字符图-哆啦a梦"><br>仔细看看，是不是感觉有点奇怪：这张图好像是彩色的！<br>把字号改大到6再看看：<br>    <img src="/2020/02/17/tu-pian-zhuan-zi-fu-tu-cong-bu-hui-dao-bu-xie-zai-matlab-ming-ling-xing-chuang-kou-zhong-shu-chu-bad-apple-dong-hua/%E6%95%88%E6%9E%9C2%E6%94%BE%E5%A4%A7.jpg" alt="放大的字符图-哆啦a梦"><br>没错，黑白字符呈现出了彩色的图像。那个知乎答主说这是一种色幻觉，不过具体原因他没有给出，我也没查到可信的说法，所以此处暂时按下不表。</p>
 <!-- toc -->
 <h3 id="字符动画"><a href="#字符动画" class="headerlink" title="字符动画"></a>字符动画</h3><p>搞定了字符图的代码，做一个字符动画简直是小菜一碟，只要读取视频后逐帧处理输出就好了。本着“可以输出的地方就有bad apple”的原则，第一个字符视频就是bad apple了，这也是本站首页的视频：<br>    <video src="b4.mp4 " type="video/mp4" controls="controls" width="100%" height="100%"><br></video><br>可惜的是这个程序不能播放声音，bgm是我后期加的，而且不同的灰度-字符程序对于黑白二色视频来说，效果都不会太差。接下来看看色彩更丰富的fate hf -狗哥vs王哈桑：<br><video src="fate.mp4 " type="video/mp4" controls="controls" width="100%" height="100%"><br></video><br>……效果确实差强人意，不过这火花确实蛮好看😂。<br>总之，视频转字符并没有看起来那么难，这也是我从一窍不通到快速掌握并感到不屑的原因，明明matlab可以做很多更好玩的事情，但是为什么我的同学没有看到并分享给我！</p>
 <!-- toc -->
@@ -725,7 +730,8 @@ end</code></pre><script>
                 <div class="card-content article-content">
                     <div class="summary block-with-text">
                         
-                            某日同学给我看dy上一个短视频，是将视频转换成ASKII字符输出，这都是十年前的网友玩的了，怎么能难倒我呢，我决定用matlab也做一个。不过饭要一口一口吃，我先做了一个小程序，读取电脑中的图片，转换为字符图，输出到matlab命令行窗口并
+                            
+某日同学给我看dy上一个短视频，是将视频转换成ASKII字符输出，这都是十年前的网友玩的了，怎么能难倒我呢，我决定用matlab也做一个。不过饭要一口一口吃，我先做了一个小程序，读取电脑中的图片，转换为字符图，输出到matlab命令行窗口
                         
                     </div>
                     <div class="publish-info">
