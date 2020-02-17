@@ -7,9 +7,8 @@
     <meta name="keywords" content="用matlab画出同一轨道平面下的三体运行轨迹, Hexo">
     <meta name="description" content="
 一直想模拟一下三体运行，这次终于用matlab做了个小程序，代码附在文后。
-思路：
-假设在极短的时间dt内，天体的速度(vx,vy)不会改变，则dt时间后天体的坐标x&#39;=x+vx*dt，y&#39;=y+vy*dt；
-假设在极短的时间dt内，天体">
+
+思路假设在极短的时间dt内，天体的速度(vx,vy)不会改变，则dt时间后天体的坐标x’=x+vxdt，y’=y+vydt；假设在极短的时间dt内，天体的加速度">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
     <meta name="renderer" content="webkit|ie-stand|ie-comp">
@@ -432,12 +431,12 @@
                     
                     <div class="article-tag">
                         
-                            <a href="/tags/%E4%BB%A3%E7%A0%81/">
-                                <span class="chip bg-color">代码</span>
-                            </a>
-                        
                             <a href="/tags/matlab/">
                                 <span class="chip bg-color">matlab</span>
+                            </a>
+                        
+                            <a href="/tags/%E4%BB%A3%E7%A0%81/">
+                                <span class="chip bg-color">代码</span>
                             </a>
                         
                             <a href="/tags/%E4%B8%89%E4%BD%93/">
@@ -467,7 +466,7 @@
                 
                 <div class="post-date info-break-policy">
                     <i class="far fa-calendar-check fa-fw"></i>更新日期:&nbsp;&nbsp;
-                    2020-02-14
+                    2020-02-15
                 </div>
                 
 
@@ -497,12 +496,14 @@
         <hr class="clearfix">
         <div class="card-content article-card-content">
             <div id="articleContent">
-                <div id="aplayer-RKlFuJDk" class="aplayer aplayer-tag-marker meting-tag-marker" data-id="7428376268" data-server="tencent" data-type="playlist" data-mode="circulation" data-autoplay="false" data-mutex="true" data-listmaxheight="340px" data-preload="auto" data-theme="#555"></div>
+                <div id="aplayer-ZUhdBLTw" class="aplayer aplayer-tag-marker meting-tag-marker" data-id="7428376268" data-server="tencent" data-type="playlist" data-mode="circulation" data-autoplay="false" data-mutex="true" data-listmaxheight="340px" data-preload="auto" data-theme="#555"></div>
 <p>一直想模拟一下三体运行，这次终于用matlab做了个小程序，代码附在文后。</p>
-<pre><code>思路：
-假设在极短的时间dt内，天体的速度(vx,vy)不会改变，则dt时间后天体的坐标x'=x+vx*dt，y'=y+vy*dt；
-假设在极短的时间dt内，天体的加速度(ax,ay)不会改变，则dt时间后天体的速度vx'=vx+ax*dt，vy'=vy+ay*dt；
-天体受到的引力由万有引力公式求得，除以质量就是加速度，这个都会的，不说了。</code></pre><p>以下四次模拟中三个天体的坐标、位置、速度、加速度等相同，但Δt的值不同，刚开始的轨迹大致相同，但一段时间后的结果完全不一样：<br><video src="1.mp4 " type="video/mp4" controls="controls" width="100%" height="100%"><br></video><br><video src="10.mp4 " type="video/mp4" controls="controls" width="100%" height="100%"><br></video><br><video src="100.mp4 " type="video/mp4" controls="controls" width="100%" height="100%"><br></video><br><video src="1000.mp4 " type="video/mp4" controls="controls" width="100%" height="100%"><br></video><br>————————————————————————————————————————————<br>————————————————————————————————————————————<br>一些有规律的轨迹：<br> <video src="2.mp4 " type="video/mp4" controls="controls" width="100%" height="100%"><br></video><br><video src="3.mp4 " type="video/mp4" controls="controls" width="100%" height="100%"><br></video><br><video src="4.mp4 " type="video/mp4" controls="controls" width="100%" height="100%"><br></video><br>————————————————————————————————————————————<br>————————————————————————————————————————————<br>我还验证了5个拉格朗日点，不过视频太多了，这里就不放了。<br>以下是主程序代码：</p>
+<!-- toc -->
+<h3 id="思路"><a href="#思路" class="headerlink" title="思路"></a>思路</h3><p>假设在极短的时间dt内，天体的速度(vx,vy)不会改变，则dt时间后天体的坐标x’=x+vx<em>dt，y’=y+vy</em>dt；<br>假设在极短的时间dt内，天体的加速度(ax,ay)不会改变，则dt时间后天体的速度vx’=vx+ax<em>dt，vy’=vy+ay</em>dt；<br>天体受到的引力由万有引力公式求得，除以质量就是加速度，这个都会的，不说了。</p>
+<!-- toc -->
+<h3 id="运行视频"><a href="#运行视频" class="headerlink" title="运行视频"></a>运行视频</h3><p>以下四次模拟中三个天体的坐标、位置、速度、加速度等相同，但Δt的值不同，刚开始的轨迹大致相同，但一段时间后的结果完全不一样：<br><video src="1.mp4 " type="video/mp4" controls="controls" width="100%" height="100%"><br></video><br><video src="10.mp4 " type="video/mp4" controls="controls" width="100%" height="100%"><br></video><br><video src="100.mp4 " type="video/mp4" controls="controls" width="100%" height="100%"><br></video><br><video src="1000.mp4 " type="video/mp4" controls="controls" width="100%" height="100%"><br></video><br>————————————————————————————————————————————<br>————————————————————————————————————————————<br>一些有规律的轨迹：<br> <video src="2.mp4 " type="video/mp4" controls="controls" width="100%" height="100%"><br></video><br><video src="3.mp4 " type="video/mp4" controls="controls" width="100%" height="100%"><br></video><br><video src="4.mp4 " type="video/mp4" controls="controls" width="100%" height="100%"><br></video><br>————————————————————————————————————————————<br>————————————————————————————————————————————<br>我还验证了5个拉格朗日点，不过视频太多了，这里就不放了。</p>
+<!-- toc -->
+<h3 id="代码"><a href="#代码" class="headerlink" title="代码"></a>代码</h3><p>主程序：</p>
 <pre><code>clc 
 clear
 dt=10;%极短时间Δt，在此时间内，速度、加速度认为不变，越小越精确
@@ -663,12 +664,12 @@ end</code></pre><script>
                     
                         <div class="article-tag">
                             
-                                <a href="/tags/%E4%BB%A3%E7%A0%81/">
-                                    <span class="chip bg-color">代码</span>
-                                </a>
-                            
                                 <a href="/tags/matlab/">
                                     <span class="chip bg-color">matlab</span>
+                                </a>
+                            
+                                <a href="/tags/%E4%BB%A3%E7%A0%81/">
+                                    <span class="chip bg-color">代码</span>
                                 </a>
                             
                                 <a href="/tags/%E4%B8%89%E4%BD%93/">
@@ -730,7 +731,10 @@ end</code></pre><script>
                     <div class="summary block-with-text">
                         
                             
-嫌犯A（假设就是读者你）、B中的一个杀了人，警察在审问。A：我没有杀人。B：我们中有且仅有一个人说了真话。请问谁是杀人犯？————————————————————————————————————————————警察开始推理：1.如果B说的
+
+问题嫌犯A（假设就是读者你）、B中的一个杀了人，警察在审问。A：我没有杀人。B：我们中有且仅有一个人说了真话。请问谁是杀人犯？
+
+推理警察开始推理：1.如果B说的是真话，那么由B的话可知，只有B说了真话，A说了假话，A杀了人。2.如果B
                         
                     </div>
                     <div class="publish-info">
@@ -792,7 +796,8 @@ end</code></pre><script>
                     <div class="summary block-with-text">
                         
                             
-原文链接：https://zhuanlan.zhihu.com/p/74538287?utm_source=qq&amp;utm_medium=social&amp;utm_oi=957630127903924224项目GitHub：ht
+
+原文及作者知乎链接：https://zhuanlan.zhihu.com/p/74538287?utm_source=qq&amp;utm_medium=social&amp;utm_oi=957630127903924224GitHu
                         
                     </div>
                     <div class="publish-info">
@@ -971,7 +976,7 @@ code[class*="language-"], pre[class*="language-"] { white-space: pre !important;
             <br>
             
             &nbsp;<i class="fas fa-chart-area"></i>&nbsp;站点总字数:&nbsp;<span
-                class="white-color">2.9k</span>&nbsp;字
+                class="white-color">4.3k</span>&nbsp;字
             
             
             
