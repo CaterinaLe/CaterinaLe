@@ -395,7 +395,7 @@
         <hr class="clearfix">
         <div class="card-content article-card-content">
             <div id="articleContent">
-                <div id="aplayer-GQqDoKRQ" class="aplayer aplayer-tag-marker meting-tag-marker" data-id="569212270" data-server="netease" data-type="song" data-mode="circulation" data-autoplay="false" data-mutex="true" data-listmaxheight="340px" data-preload="auto" data-theme="#555"></div>
+                <div id="aplayer-czhFOYSS" class="aplayer aplayer-tag-marker meting-tag-marker" data-id="569212270" data-server="netease" data-type="song" data-mode="circulation" data-autoplay="false" data-mutex="true" data-listmaxheight="340px" data-preload="auto" data-theme="#555"></div>
 <p>项目地址&amp;下载地址：<a href="https://github.com/lltcggie/waifu2x-caffe/releases/tag/1.2.0.2" target="_blank" rel="noopener">https://github.com/lltcggie/waifu2x-caffe/releases/tag/1.2.0.2</a><br>针对真实照片和二次元插图提供了多种降噪和放大算法（我看到放大模型中有个ResNet10，这玩意儿还能用卷积神经网络不断学习？），而且用了Nvidia卡和cuDNN加速，真是又快又好用。放大效果请看下图：<br><img src="/2020/02/18/tu-xiang-jiang-zao-fang-da-shen-qi-waifu2x-caffe/%E6%95%88%E6%9E%9C1.jpg" alt="放大&amp;降噪效果-希儿&amp;布洛尼亚"><br>左边是低分辨率原图在widows照片应用中直接放大后的样子，右边则是采用upRGB模型，2级降噪、放大4倍后的图片，整个处理耗时不到2s。可以看到，照片经过放大后并没有“变糊”，而且速度也很快。但是，是不是感觉放大后的图片怪怪的？emm，来看看真正的高清原图：<br><img src="/2020/02/18/tu-xiang-jiang-zao-fang-da-shen-qi-waifu2x-caffe/%E5%8E%9F%E5%9B%BE.jpg" alt="高清原图-希儿&amp;布洛尼亚"><br>虽然放大效果整体看来不错，但是低分辨率图像中缺少的细节经过降噪后就完全丢掉了（注意看拿着烟花棒的希儿的右手、两人的眼睛和背景的大烟花，还有最底下的水印）。而且如果你的电脑上没有N卡或是没装cuDNN，那就只能用cpu对图像进行处理，那个速度……我的1050ti不到2s就完成的事情i5-7300足足用了14s，这还是对小图片的放大，如果要放大高清大图，没有N卡的机子估计就要告别这个软件了。而cuDNN也比较麻烦，如果没有，得去Nvidia官网下载，下载还得注册……总之就是麻烦，建议百度个教程跟着做，我就不示范了。弄好后在最右边的应用设置选择CUDA，然后点击cuDNN检测，如果你都装好了，它就会弹出“可以使用cuDNN”的窗口，就可以正常使用软件了。</p>
 <script>
         document.querySelectorAll('.github-emoji')
@@ -882,12 +882,12 @@
                 
                 <div class="card-action article-tags">
                     
-                    <a href="/tags/%E5%AD%97%E7%AC%A6%E5%9B%BE/">
-                        <span class="chip bg-color">字符图</span>
-                    </a>
-                    
                     <a href="/tags/matlab/">
                         <span class="chip bg-color">matlab</span>
+                    </a>
+                    
+                    <a href="/tags/%E5%AD%97%E7%AC%A6%E5%9B%BE/">
+                        <span class="chip bg-color">字符图</span>
                     </a>
                     
                     <a href="/tags/bad-apple/">
@@ -1118,6 +1118,6 @@ $(function () {
     <script src="/libs/instantpage/instantpage.js" type="module"></script>
     
 
-<script src="/live2dw/lib/L2Dwidget.min.js?094cbace49a39548bed64abff5988b05"></script><script>L2Dwidget.init({"pluginRootPath":"live2dw/","pluginJsPath":"lib/","pluginModelPath":"assets/","tagMode":false,"debug":false,"model":{"jsonPath":"/live2dw/assets/z16.model.json"},"display":{"position":"right","width":340,"height":680},"mobile":{"show":true},"log":false});</script></body>
+<script src="/live2dw/lib/L2Dwidget.min.js?094cbace49a39548bed64abff5988b05"></script><script>L2Dwidget.init({"pluginRootPath":"live2dw/","pluginJsPath":"lib/","pluginModelPath":"assets/","tagMode":false,"debug":false,"model":{"jsonPath":"/live2dw/assets/z16.model.json"},"display":{"position":"right","width":170,"height":340},"mobile":{"show":true},"log":false});</script></body>
 
 </html>
