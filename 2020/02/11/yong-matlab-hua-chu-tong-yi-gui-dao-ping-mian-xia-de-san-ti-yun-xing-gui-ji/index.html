@@ -8,7 +8,7 @@
     <meta name="description" content="
 　　一直想模拟一下三体运行，这次终于用matlab做了个小程序，代码附在文后。
 
-思路　　假设在极短的时间dt内，天体的速度(vx,vy)不会改变，则dt时间后天体的坐标x’=x+vxdt，y’=y+vydt；　　假设在极短的时间dt内，">
+思路　　假设在极短的时间dt内，天体的速度(vx,vy)不会改变，则dt时间后天体的坐标x’=x+vx＊dt，y’=y+vy＊dt；　　假设在极短的时间dt">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
     <meta name="renderer" content="webkit|ie-stand|ie-comp">
@@ -492,10 +492,10 @@
         <hr class="clearfix">
         <div class="card-content article-card-content">
             <div id="articleContent">
-                <div id="aplayer-DCRENRwf" class="aplayer aplayer-tag-marker meting-tag-marker" data-id="7433153279" data-server="tencent" data-type="playlist" data-mode="circulation" data-autoplay="false" data-mutex="true" data-listmaxheight="340px" data-preload="auto" data-theme="#555"></div>
+                <div id="aplayer-uJPhnKQP" class="aplayer aplayer-tag-marker meting-tag-marker" data-id="7433153279" data-server="tencent" data-type="playlist" data-mode="circulation" data-autoplay="false" data-mutex="true" data-listmaxheight="340px" data-preload="auto" data-theme="#555"></div>
 <p>　　一直想模拟一下三体运行，这次终于用matlab做了个小程序，代码附在文后。</p>
 <!-- toc -->
-<h3 id="思路"><a href="#思路" class="headerlink" title="思路"></a>思路</h3><p>　　假设在极短的时间dt内，天体的速度(vx,vy)不会改变，则dt时间后天体的坐标x’=x+vx<em>dt，y’=y+vy</em>dt；<br>　　假设在极短的时间dt内，天体的加速度(ax,ay)不会改变，则dt时间后天体的速度vx’=vx+ax<em>dt，vy’=vy+ay</em>dt；<br>　　天体受到的引力由万有引力公式求得，除以质量就是加速度，这个都会的，不说了。</p>
+<h3 id="思路"><a href="#思路" class="headerlink" title="思路"></a>思路</h3><p>　　假设在极短的时间dt内，天体的速度(vx,vy)不会改变，则dt时间后天体的坐标x’=x+vx＊dt，y’=y+vy＊dt；<br>　　假设在极短的时间dt内，天体的加速度(ax,ay)不会改变，则dt时间后天体的速度vx’=vx+ax＊dt，vy’=vy+ay＊dt；<br>　　天体受到的引力由万有引力公式求得，除以质量就是加速度，这个都会的，不说了。</p>
 <!-- toc -->
 <h3 id="运行视频"><a href="#运行视频" class="headerlink" title="运行视频"></a>运行视频</h3><p>　　以下四次模拟中三个天体的坐标、位置、速度、加速度等相同，但Δt的值不同，刚开始的轨迹大致相同，但一段时间后的结果完全不一样：<br><video src="1.mp4 " type="video/mp4" controls="controls" width="100%" height="100%"><br></video><br><video src="10.mp4 " type="video/mp4" controls="controls" width="100%" height="100%"><br></video><br><video src="100.mp4 " type="video/mp4" controls="controls" width="100%" height="100%"><br></video><br><video src="1000.mp4 " type="video/mp4" controls="controls" width="100%" height="100%"><br></video><br><br><br>　　一些有规律的轨迹：<br> <video src="2.mp4 " type="video/mp4" controls="controls" width="100%" height="100%"><br></video><br><video src="3.mp4 " type="video/mp4" controls="controls" width="100%" height="100%"><br></video><br><video src="4.mp4 " type="video/mp4" controls="controls" width="100%" height="100%"><br></video><br><br><br>　　我还验证了5个拉格朗日点，不过视频太多了，这里就不放了。</p>
 <!-- toc -->
