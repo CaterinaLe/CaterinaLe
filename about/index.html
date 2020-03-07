@@ -526,7 +526,7 @@
         },
         xAxis: {
             type: 'category',
-            data: ["2019-02","2019-03","2019-04","2019-05","2019-06","2019-07","2019-08","2019-09","2019-10","2019-11","2019-12","2020-01","2020-02"]
+            data: ["2019-03","2019-04","2019-05","2019-06","2019-07","2019-08","2019-09","2019-10","2019-11","2019-12","2020-01","2020-02","2020-03"]
         },
         yAxis: {
             type: 'value',
@@ -536,7 +536,7 @@
                 name: '文章篇数',
                 type: 'line',
                 color: ['#6772e5'],
-                data: [0,0,0,0,0,0,0,0,1,1,0,0,6],
+                data: [0,0,0,0,0,0,0,1,1,0,0,6,0],
                 markPoint: {
                     symbolSize: 45,
                     color: ['#fa755a','#3ecf8e','#82d3f4'],
@@ -578,7 +578,7 @@
                 type: 'pie',
                 radius: '50%',
                 color: ['#6772e5', '#ff9e0f', '#fa755a', '#3ecf8e', '#82d3f4', '#ab47bc', '#525f7f', '#f51c47', '#26A69A'],
-                data: [{"name":"硬件","value":1},{"name":"未归类","value":2},{"name":"侃","value":1},{"name":"技","value":3},{"name":"时","value":1}],
+                data: [{"name":"侃","value":1},{"name":"硬件","value":1},{"name":"未归类","value":2},{"name":"技","value":3},{"name":"时","value":1}],
                 itemStyle: {
                     emphasis: {
                         shadowBlur: 10,
@@ -602,7 +602,7 @@
         xAxis: [
             {
                 type: 'category',
-                data: ["matlab","内存条","双十一","waifu2x-caffe","图像放大","悖论","字符图","bad apple","三体","网盘"]
+                data: ["matlab","悖论","内存条","双十一","waifu2x-caffe","图像放大","字符图","bad apple","网盘","onedrive"]
             }
         ],
         yAxis: [
@@ -715,17 +715,23 @@
             
             
             
-            <span id="busuanzi_container_site_pv">
-                |&nbsp;<i class="far fa-eye"></i>&nbsp;总访问量:&nbsp;<span id="busuanzi_value_site_pv"
-                    class="white-color"></span>&nbsp;次
-            </span>
-            
-            
-            <span id="busuanzi_container_site_uv">
-                |&nbsp;<i class="fas fa-users"></i>&nbsp;总访问人数:&nbsp;<span id="busuanzi_value_site_uv"
-                    class="white-color"></span>&nbsp;人
-            </span>
-            
+      
+    <span id="busuanzi_container_site_pv" style='display:none'></span>
+        <i class="fa fa-heart-o"></i>
+        本站总访问量 <span id="busuanzi_value_site_pv" class="white-color"></span>
+
+
+
+
+    <span id="busuanzi_container_site_uv" style='display:none'></span>
+        人次,&nbsp;访客数 <span id="busuanzi_value_site_uv" class="white-color"></span> 人.
+
+
+
+来源: 洪卫の博客
+作者: 洪卫
+文章链接: https://sunhwee.com/posts/6e8839eb.html#toc-heading-29
+本文章著作权归作者所有，任何形式的转载都请注明出处。
             <br>
             
             <br>
