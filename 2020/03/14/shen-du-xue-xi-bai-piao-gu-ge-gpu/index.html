@@ -4,10 +4,10 @@
 
 <head>
     <meta charset="utf-8">
-    <meta name="keywords" content="双十一, Hexo">
-    <meta name="description" content="
+    <meta name="keywords" content="深度学习-白嫖谷歌gpu, Hexo">
+    <meta name="description" content="最近做一个图像识别的项目，要用到卷积神经网络，因为深度学习的框架搭建坑太多了，装了一个星期没装好，于是打算在云端搭建好的平台上跑代码。正好谷歌有个深度学习平台Colab，试了一下除了要翻墙外还挺好用的，就决定在这上面跑代码了。
 
-　　双十一就花209元买了根海力士的内存条。其实很多商家在1号就有活动，优惠力度基本和双十一当天相当。可是无论是京东还是淘宝并没有多大的优惠（并夕夕的车不敢上），噱头倒挺大，然而京东偶尔的活动都能便宜很多（比如现在京东上我的同款内存条就">
+简介Col">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
     <meta name="renderer" content="webkit|ie-stand|ie-comp">
@@ -15,7 +15,7 @@
     <meta name="format-detection" content="telephone=no">
     <meta name="apple-mobile-web-app-capable" content="yes">
     <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
-    <title>双十一 | Hexo</title>
+    <title>深度学习-白嫖谷歌gpu | Hexo</title>
     <link rel="icon" type="image/png" href="/favicon.png">
 
     <link rel="stylesheet" type="text/css" href="/libs/awesome/css/all.css">
@@ -28,10 +28,7 @@
 
     <script src="/libs/jquery/jquery.min.js"></script>
     
-<link rel="stylesheet" href="/css/prism-tomorrow.css" type="text/css"><link rel="stylesheet" href="\assets\css\APlayer.min.css" class="aplayer-style-marker">
-<script src="\assets\js\APlayer.min.js" class="aplayer-script-marker"></script>
-<script src="\assets\js\Meting.min.js" class="meting-script-marker"></script>
-</head>
+<link rel="stylesheet" href="/css/prism-tomorrow.css" type="text/css"></head>
 
 
 <body>
@@ -308,12 +305,12 @@
 
 
 
-<div class="bg-cover pd-header post-cover" style="background-image: url('/medias/featureimages/3.jpg')">
+<div class="bg-cover pd-header post-cover" style="background-image: url('/medias/featureimages/8.jpg')">
     <div class="container" style="right: 0px;left: 0px;">
         <div class="row">
             <div class="col s12 m12 l12">
                 <div class="brand">
-                    <h1 class="description center-align post-title">双十一</h1>
+                    <h1 class="description center-align post-title">深度学习-白嫖谷歌gpu</h1>
                 </div>
             </div>
         </div>
@@ -323,10 +320,105 @@
 
 
 
-<main class="container content">
+<main class="post-container content">
 
     
-    <!-- 文章内容详情 -->
+    <link rel="stylesheet" href="/libs/tocbot/tocbot.css">
+<style>
+    #articleContent h1::before,
+    #articleContent h2::before,
+    #articleContent h3::before,
+    #articleContent h4::before,
+    #articleContent h5::before,
+    #articleContent h6::before {
+        display: block;
+        content: " ";
+        height: 100px;
+        margin-top: -100px;
+        visibility: hidden;
+    }
+
+    #articleContent :focus {
+        outline: none;
+    }
+
+    .toc-fixed {
+        position: fixed;
+        top: 64px;
+    }
+
+    .toc-widget {
+        width: 345px;
+        padding-left: 20px;
+    }
+
+    .toc-widget .toc-title {
+        margin: 35px 0 15px 0;
+        padding-left: 17px;
+        font-size: 1.5rem;
+        font-weight: bold;
+        line-height: 1.5rem;
+    }
+
+    .toc-widget ol {
+        padding: 0;
+        list-style: none;
+    }
+
+    #toc-content {
+        height: calc(100vh - 250px);
+        overflow: auto;
+    }
+
+    #toc-content ol {
+        padding-left: 10px;
+    }
+
+    #toc-content ol li {
+        padding-left: 10px;
+    }
+
+    #toc-content .toc-link:hover {
+        color: #42b983;
+        font-weight: 700;
+        text-decoration: underline;
+    }
+
+    #toc-content .toc-link::before {
+        background-color: transparent;
+        max-height: 25px;
+    }
+
+    #toc-content .is-active-link {
+        color: #42b983;
+    }
+
+    #toc-content .is-active-link::before {
+        background-color: #42b983;
+    }
+
+    #floating-toc-btn {
+        position: fixed;
+        right: 15px;
+        bottom: 76px;
+        padding-top: 15px;
+        margin-bottom: 0;
+        z-index: 998;
+    }
+
+    #floating-toc-btn .btn-floating {
+        width: 48px;
+        height: 48px;
+    }
+
+    #floating-toc-btn .btn-floating i {
+        line-height: 48px;
+        font-size: 1.4rem;
+    }
+</style>
+<div class="row">
+    <div id="main-content" class="col s12 m12 l9">
+        <!-- 文章内容详情 -->
 <div id="artDetail">
     <div class="card">
         <div class="card-content article-info">
@@ -335,12 +427,16 @@
                     
                     <div class="article-tag">
                         
-                            <a href="/tags/%E5%86%85%E5%AD%98%E6%9D%A1/">
-                                <span class="chip bg-color">内存条</span>
+                            <a href="/tags/%E6%B7%B1%E5%BA%A6%E5%AD%A6%E4%B9%A0/">
+                                <span class="chip bg-color">深度学习</span>
                             </a>
                         
-                            <a href="/tags/%E5%8F%8C%E5%8D%81%E4%B8%80/">
-                                <span class="chip bg-color">双十一</span>
+                            <a href="/tags/python/">
+                                <span class="chip bg-color">python</span>
+                            </a>
+                        
+                            <a href="/tags/%E8%B0%B7%E6%AD%8CColab/">
+                                <span class="chip bg-color">谷歌Colab</span>
                             </a>
                         
                     </div>
@@ -351,8 +447,8 @@
                     <div class="post-cate">
                         <i class="fas fa-bookmark fa-fw icon-category"></i>
                         
-                            <a href="/categories/%E5%99%A8%E2%80%94%E7%A1%AC%E4%BB%B6/" class="post-category">
-                                器—硬件
+                            <a href="/categories/%E5%99%A8/" class="post-category">
+                                器
                             </a>
                         
                     </div>
@@ -364,28 +460,28 @@
                 
                 <div class="post-date info-break-policy">
                     <i class="far fa-calendar-minus fa-fw"></i>发布日期:&nbsp;&nbsp;
-                    2019-11-15
+                    2020-03-14
                 </div>
                 
 
                 
                 <div class="post-date info-break-policy">
                     <i class="far fa-calendar-check fa-fw"></i>更新日期:&nbsp;&nbsp;
-                    2020-03-07
+                    2020-03-14
                 </div>
                 
 
                 
                 <div class="info-break-policy">
                     <i class="far fa-file-word fa-fw"></i>文章字数:&nbsp;&nbsp;
-                    454
+                    744
                 </div>
                 
 
                 
                 <div class="info-break-policy">
                     <i class="far fa-clock fa-fw"></i>阅读时长:&nbsp;&nbsp;
-                    1 分
+                    2 分
                 </div>
                 
 
@@ -400,10 +496,13 @@
         <hr class="clearfix">
         <div class="card-content article-card-content">
             <div id="articleContent">
-                <div id="aplayer-OWOTDyOT" class="aplayer aplayer-tag-marker meting-tag-marker" data-id="19579127" data-server="netease" data-type="song" data-mode="circulation" data-autoplay="false" data-mutex="true" data-listmaxheight="340px" data-preload="auto" data-theme="#555"></div>
-
-<p>　　双十一就花209元买了根海力士的内存条。其实很多商家在1号就有活动，优惠力度基本和双十一当天相当。可是无论是京东还是淘宝并没有多大的优惠（并夕夕的车不敢上），噱头倒挺大，然而京东偶尔的活动都能便宜很多（比如现在京东上我的同款内存条就还是209）<a id="more"></a>，我还有什么理由再在双十一买东西？<br>　　……有，因为有个满400减50的津贴。我本来也是想再买个东芝RC500固态凑400的，然后发现所有的固态都不支持满减……无可奈何，含恨删除商品。<br>　　<br>　　<img src="/2019/11/15/11/nc.png" alt="某东商品截图"><br>　　<br>　　<img src="/2019/11/15/11/nc2.png" alt="到手后的内存条"><br>　　<br>　　最后说一下，内存条很容易没插好或受污导致无法开机。我同学前几天帮我拆机看固态时顺手把内存条也拔下来换了个插槽插回去，结果弄好后开不了机。一开始没想到是内存条问题，还以为是哪条线接触不良，捣鼓了半天。后来我看到网上说可能是内存条的问题，同学还一口咬定说不可能……又忙了半天怀着死马当活马医的心态把内存条拔了用橡皮擦擦干净（其实橡皮擦也不怎么干净）插回去居然能开机了！<br>　　新内存条到手后同学坚决不碰这台玄学机子😂，教我操作，然后我拆插合一气呵成，一次成功点亮……果然是玄学机子。<br>　<br>　　组了个双通道，真是美滋滋：<br><img src="/2019/11/15/11/nc3.png" alt="双通道"></p>
-<hr>
+                <p>最近做一个图像识别的项目，要用到卷积神经网络，因为深度学习的框架搭建坑太多了，装了一个星期没装好，于是打算在云端搭建好的平台上跑代码。正好谷歌有个深度学习平台Colab，试了一下除了要翻墙外还挺好用的，就决定在这上面跑代码了。</p>
+<!-- toc -->
+<h3 id="简介"><a href="#简介" class="headerlink" title="简介"></a>简介</h3><p>Colaboratory 是一个免费的 Jupyter 笔记本环境，不需要进行任何设置就可以使用，并且完全在云端运行。借助 Colaboratory，可以编写和执行代码、保存和共享分析结果，以及利用强大的计算资源，所有这些都可通过浏览器免费使用。<br>重点，免费！上万的gpu说给你用就给你用。<br>官方简介：<a href="https://colab.research.google.com/notebooks/welcome.ipynb" target="_blank" rel="noopener">https://colab.research.google.com/notebooks/welcome.ipynb</a></p>
+<!-- toc -->
+<h3 id="使用方法"><a href="#使用方法" class="headerlink" title="使用方法"></a>使用方法</h3><p>1.首先因为众所周知的原因，国内是用不了谷歌服务的，使用你要有个梯子，或者谷歌访问助手什么的。<br>2.然后你要有个谷歌账号，注册一个就行，这里可能会因为网络问题严重影响注册体验，我同学注册了一上午才搞定(+_+)。<br>3.打开<a href="https://colab.research.google.com/notebooks/welcome.ipynb，如下图所示" target="_blank" rel="noopener">https://colab.research.google.com/notebooks/welcome.ipynb，如下图所示</a>:<br><img src="/2020/03/14/shen-du-xue-xi-bai-piao-gu-ge-gpu/E:%5Cblog%5Csource_posts%5C%E6%B7%B1%E5%BA%A6%E5%AD%A6%E4%B9%A0-%E7%99%BD%E5%AB%96%E8%B0%B7%E6%AD%8Cgpu%5C1.png" alt="Welcome界面"><br>在界面左上角1处，点击文件-新建笔记本创建新的笔记本。<br>在文件旁边，点击修改-笔记本设置-硬件加速器，可选无、gpu和tpu。<br>在界面左上角2处，点击可进入谷歌云盘，上传文件供代码使用、下载笔记本ipynb文件或python py文件。<br>在界面右上角3处，点击连接云端虚拟机，谷歌会自动为你分配内存、硬盘等。<br>在界面左上角4处，点击文件夹图标-装载Google云端硬盘，就可以使用存在硬盘上的文件了（右键可获得文件路径）<br>在界面5处，鼠标放在上面会出现一个运行按钮，单机即可运行代码<br>云端平台本质上是个Linux虚拟机，所有Linux指令都可通过在指令前加!实现，比如!tar -xzvf test.tar.gz和!pip tensorflow==2.1.0<br>其他基础用法在Welcome界面都有，这里就不啰嗦了。</p>
+<!-- toc -->
+<h3 id="缺点"><a href="#缺点" class="headerlink" title="缺点"></a>缺点</h3><p>因为我用的谷歌访问助手是免费的，所有缺点很明显：老是断！加载也要半天或者直接加载失败，上传下载文件也比较慢……所以前两天又硬着头皮重新在本地搭建环境，终于在同学帮助下搞定了，以后代码都在本地跑了，很少用云端了吧。当然，本地跑1个，云端跑n个，还是挺香的q(≧▽≦q)</p>
 <script>
         document.querySelectorAll('.github-emoji')
           .forEach(el => {
@@ -447,7 +546,7 @@
                     </i>
                 </span>
                 <span class="reprint-info">
-                    <a href="https://caterinale.github.io/2019/11/15/11/">https://caterinale.github.io/2019/11/15/11/</a>
+                    <a href="https://caterinale.github.io/2020/03/14/shen-du-xue-xi-bai-piao-gu-ge-gpu/">https://caterinale.github.io/2020/03/14/shen-du-xue-xi-bai-piao-gu-ge-gpu/</a>
                 </span>
             </div>
             <div class="reprint__notice">
@@ -485,12 +584,16 @@
                     
                         <div class="article-tag">
                             
-                                <a href="/tags/%E5%86%85%E5%AD%98%E6%9D%A1/">
-                                    <span class="chip bg-color">内存条</span>
+                                <a href="/tags/%E6%B7%B1%E5%BA%A6%E5%AD%A6%E4%B9%A0/">
+                                    <span class="chip bg-color">深度学习</span>
                                 </a>
                             
-                                <a href="/tags/%E5%8F%8C%E5%8D%81%E4%B8%80/">
-                                    <span class="chip bg-color">双十一</span>
+                                <a href="/tags/python/">
+                                    <span class="chip bg-color">python</span>
+                                </a>
+                            
+                                <a href="/tags/%E8%B0%B7%E6%AD%8CColab/">
+                                    <span class="chip bg-color">谷歌Colab</span>
                                 </a>
                             
                         </div>
@@ -794,50 +897,58 @@
 <article id="prenext-posts" class="prev-next articles">
     <div class="row article-row">
         
-        <div class="article col s12 m6" data-aos="fade-up">
+        <div class="article col s12 m6" data-aos="fade-up" data-aos="fade-up">
             <div class="article-badge left-badge text-color">
-                <i class="fas fa-chevron-left"></i>&nbsp;上一篇</div>
+                <i class="far fa-dot-circle"></i>&nbsp;本篇
+            </div>
             <div class="card">
-                <a href="/2020/02/07/zao-yao-zhe-zhi-mu/">
+                <a href="/2020/03/14/shen-du-xue-xi-bai-piao-gu-ge-gpu/">
                     <div class="card-image">
                         
                         
-                        <img src="/medias/featureimages/18.jpg" class="responsive-img" alt="造谣者之墓">
+                        <img src="/medias/featureimages/8.jpg" class="responsive-img" alt="深度学习-白嫖谷歌gpu">
                         
-                        <span class="card-title">造谣者之墓</span>
+                        <span class="card-title">深度学习-白嫖谷歌gpu</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
                     <div class="summary block-with-text">
                         
-                            
+                            最近做一个图像识别的项目，要用到卷积神经网络，因为深度学习的框架搭建坑太多了，装了一个星期没装好，于是打算在云端搭建好的平台上跑代码。正好谷歌有个深度学习平台Colab，试了一下除了要翻墙外还挺好用的，就决定在这上面跑代码了。
 
-墓的正面                                武汉市公安局 武昌分局 中南路街派出所
-                                            训 诫 书
-            
+简介Col
                         
                     </div>
                     <div class="publish-info">
-                        <span class="publish-date">
-                            <i class="far fa-clock fa-fw icon-date"></i>2020-02-07
-                        </span>
+                            <span class="publish-date">
+                                <i class="far fa-clock fa-fw icon-date"></i>2020-03-14
+                            </span>
                         <span class="publish-author">
                             
                             <i class="fas fa-bookmark fa-fw icon-category"></i>
                             
-                            <a href="/categories/%E6%97%B6/" class="post-category">
-                                    时
+                            <a href="/categories/%E5%99%A8/" class="post-category">
+                                    器
                                 </a>
                             
                             
                         </span>
                     </div>
                 </div>
+
                 
                 <div class="card-action article-tags">
                     
-                    <a href="/tags/%E7%89%A2%E9%AA%9A/">
-                        <span class="chip bg-color">牢骚</span>
+                    <a href="/tags/%E6%B7%B1%E5%BA%A6%E5%AD%A6%E4%B9%A0/">
+                        <span class="chip bg-color">深度学习</span>
+                    </a>
+                    
+                    <a href="/tags/python/">
+                        <span class="chip bg-color">python</span>
+                    </a>
+                    
+                    <a href="/tags/%E8%B0%B7%E6%AD%8CColab/">
+                        <span class="chip bg-color">谷歌Colab</span>
                     </a>
                     
                 </div>
@@ -851,59 +962,53 @@
                 下一篇&nbsp;<i class="fas fa-chevron-right"></i>
             </div>
             <div class="card">
-                <a href="/2019/10/05/ce-shi-yong/">
+                <a href="/2020/02/18/tu-xiang-jiang-zao-fang-da-shen-qi-waifu2x-caffe/">
                     <div class="card-image">
                         
                         
-                        <img src="/medias/featureimages/6.jpg" class="responsive-img" alt="测试用">
+                        <img src="/medias/featureimages/6.jpg" class="responsive-img" alt="图像降噪、放大神器：waifu2x-caffe">
                         
-                        <span class="card-title">测试用</span>
+                        <span class="card-title">图像降噪、放大神器：waifu2x-caffe</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
                     <div class="summary block-with-text">
                         
-                            Music音乐播放器:
-
-    
-
-音乐单曲：
-
-
-
-Picture图片：　　
-
-Video本地视频：
-网页视频：
-
-
-    
-    
-
-    
- 
-
-
-Othersemoji:😏   😂
-
-        document.q
+                            
+　　项目地址&amp;下载地址：https://github.com/lltcggie/waifu2x-caffe/releases/tag/1.2.0.2　　针对真实照片和二次元插图提供了多种降噪和放大算法（我看到放大模型中有个ResN
                         
                     </div>
                     <div class="publish-info">
                             <span class="publish-date">
-                                <i class="far fa-clock fa-fw icon-date"></i>2019-10-05
+                                <i class="far fa-clock fa-fw icon-date"></i>2020-02-18
                             </span>
                         <span class="publish-author">
                             
                             <i class="fas fa-bookmark fa-fw icon-category"></i>
                             
-                            <a href="/categories/%E6%9C%AA%E5%BD%92%E7%B1%BB/" class="post-category">
-                                    未归类
+                            <a href="/categories/%E5%99%A8%E2%80%94%E8%BD%AF%E4%BB%B6/" class="post-category">
+                                    器—软件
                                 </a>
                             
                             
                         </span>
                     </div>
+                </div>
+                
+                <div class="card-action article-tags">
+                    
+                    <a href="/tags/waifu2x-caffe/">
+                        <span class="chip bg-color">waifu2x-caffe</span>
+                    </a>
+                    
+                    <a href="/tags/%E5%9B%BE%E5%83%8F%E6%94%BE%E5%A4%A7/">
+                        <span class="chip bg-color">图像放大</span>
+                    </a>
+                    
+                    <a href="/tags/%E5%9B%BE%E5%83%8F%E5%8E%BB%E5%99%AA/">
+                        <span class="chip bg-color">图像去噪</span>
+                    </a>
+                    
                 </div>
                 
             </div>
@@ -977,6 +1082,100 @@ Othersemoji:😏   😂
 code[class*="language-"], pre[class*="language-"] { white-space: pre !important; }
 </style>
 
+
+    </div>
+    <div id="toc-aside" class="expanded col l3 hide-on-med-and-down">
+        <div class="toc-widget">
+            <div class="toc-title"><i class="far fa-list-alt"></i>&nbsp;&nbsp;目录</div>
+            <div id="toc-content"></div>
+        </div>
+    </div>
+</div>
+
+<!-- TOC 悬浮按钮. -->
+
+<div id="floating-toc-btn" class="hide-on-med-and-down">
+    <a class="btn-floating btn-large bg-color">
+        <i class="fas fa-list-ul"></i>
+    </a>
+</div>
+
+
+<script src="/libs/tocbot/tocbot.min.js"></script>
+<script>
+    $(function () {
+        tocbot.init({
+            tocSelector: '#toc-content',
+            contentSelector: '#articleContent',
+            headingsOffset: -($(window).height() * 0.4 - 45),
+            collapseDepth: Number('0'),
+            headingSelector: 'h2, h3, h4'
+        });
+
+        // modify the toc link href to support Chinese.
+        let i = 0;
+        let tocHeading = 'toc-heading-';
+        $('#toc-content a').each(function () {
+            $(this).attr('href', '#' + tocHeading + (++i));
+        });
+
+        // modify the heading title id to support Chinese.
+        i = 0;
+        $('#articleContent').children('h2, h3, h4').each(function () {
+            $(this).attr('id', tocHeading + (++i));
+        });
+
+        // Set scroll toc fixed.
+        let tocHeight = parseInt($(window).height() * 0.4 - 64);
+        let $tocWidget = $('.toc-widget');
+        $(window).scroll(function () {
+            let scroll = $(window).scrollTop();
+            /* add post toc fixed. */
+            if (scroll > tocHeight) {
+                $tocWidget.addClass('toc-fixed');
+            } else {
+                $tocWidget.removeClass('toc-fixed');
+            }
+        });
+
+        
+        /* 修复文章卡片 div 的宽度. */
+        let fixPostCardWidth = function (srcId, targetId) {
+            let srcDiv = $('#' + srcId);
+            if (srcDiv.length === 0) {
+                return;
+            }
+
+            let w = srcDiv.width();
+            if (w >= 450) {
+                w = w + 21;
+            } else if (w >= 350 && w < 450) {
+                w = w + 18;
+            } else if (w >= 300 && w < 350) {
+                w = w + 16;
+            } else {
+                w = w + 14;
+            }
+            $('#' + targetId).width(w);
+        };
+
+        // 切换TOC目录展开收缩的相关操作.
+        const expandedClass = 'expanded';
+        let $tocAside = $('#toc-aside');
+        let $mainContent = $('#main-content');
+        $('#floating-toc-btn .btn-floating').click(function () {
+            if ($tocAside.hasClass(expandedClass)) {
+                $tocAside.removeClass(expandedClass).hide();
+                $mainContent.removeClass('l9');
+            } else {
+                $tocAside.addClass(expandedClass).show();
+                $mainContent.addClass('l9');
+            }
+            fixPostCardWidth('artDetail', 'prenext-posts');
+        });
+        
+    });
+</script>
 
     
 
