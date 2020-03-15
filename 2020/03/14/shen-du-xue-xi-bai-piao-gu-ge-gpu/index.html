@@ -5,9 +5,10 @@
 <head>
     <meta charset="utf-8">
     <meta name="keywords" content="深度学习-白嫖谷歌gpu, Hexo">
-    <meta name="description" content="最近做一个图像识别的项目，要用到卷积神经网络，因为深度学习的框架搭建坑太多了，装了一个星期没装好，于是打算在云端搭建好的平台上跑代码。正好谷歌有个深度学习平台Colab，试了一下除了要翻墙外还挺好用的，就决定在这上面跑代码了。
+    <meta name="description" content="
+最近做一个图像识别的项目，要用到卷积神经网络，因为深度学习的框架搭建坑太多了，装了一个星期没装好，于是打算在云端搭建好的平台上跑代码。正好谷歌有个深度学习平台Colab，试了一下除了要翻墙外还可以，就决定在这上面跑代码了。
 
-简介Col">
+简介Cola">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
     <meta name="renderer" content="webkit|ie-stand|ie-comp">
@@ -28,7 +29,10 @@
 
     <script src="/libs/jquery/jquery.min.js"></script>
     
-<link rel="stylesheet" href="/css/prism-tomorrow.css" type="text/css"></head>
+<link rel="stylesheet" href="/css/prism-tomorrow.css" type="text/css"><link rel="stylesheet" href="\assets\css\APlayer.min.css" class="aplayer-style-marker">
+<script src="\assets\js\APlayer.min.js" class="aplayer-script-marker"></script>
+<script src="\assets\js\Meting.min.js" class="meting-script-marker"></script>
+</head>
 
 
 <body>
@@ -474,7 +478,7 @@
                 
                 <div class="info-break-policy">
                     <i class="far fa-file-word fa-fw"></i>文章字数:&nbsp;&nbsp;
-                    744
+                    777
                 </div>
                 
 
@@ -496,13 +500,14 @@
         <hr class="clearfix">
         <div class="card-content article-card-content">
             <div id="articleContent">
-                <p>最近做一个图像识别的项目，要用到卷积神经网络，因为深度学习的框架搭建坑太多了，装了一个星期没装好，于是打算在云端搭建好的平台上跑代码。正好谷歌有个深度学习平台Colab，试了一下除了要翻墙外还挺好用的，就决定在这上面跑代码了。</p>
+                <div id="aplayer-iPIcSNIC" class="aplayer aplayer-tag-marker meting-tag-marker" data-id="1371344808" data-server="netease" data-type="song" data-mode="circulation" data-autoplay="false" data-mutex="true" data-listmaxheight="340px" data-preload="auto" data-theme="#555"></div>
+<p>最近做一个图像识别的项目，要用到卷积神经网络，因为深度学习的框架搭建坑太多了，装了一个星期没装好，于是打算在云端搭建好的平台上跑代码。正好谷歌有个深度学习平台Colab，试了一下除了要翻墙外还可以，就决定在这上面跑代码了。</p>
 <!-- toc -->
 <h3 id="简介"><a href="#简介" class="headerlink" title="简介"></a>简介</h3><p>Colaboratory 是一个免费的 Jupyter 笔记本环境，不需要进行任何设置就可以使用，并且完全在云端运行。借助 Colaboratory，可以编写和执行代码、保存和共享分析结果，以及利用强大的计算资源，所有这些都可通过浏览器免费使用。<br>重点，免费！上万的gpu说给你用就给你用。<br>官方简介：<a href="https://colab.research.google.com/notebooks/welcome.ipynb" target="_blank" rel="noopener">https://colab.research.google.com/notebooks/welcome.ipynb</a></p>
 <!-- toc -->
-<h3 id="使用方法"><a href="#使用方法" class="headerlink" title="使用方法"></a>使用方法</h3><p>1.首先因为众所周知的原因，国内是用不了谷歌服务的，使用你要有个梯子，或者谷歌访问助手什么的。<br>2.然后你要有个谷歌账号，注册一个就行，这里可能会因为网络问题严重影响注册体验，我同学注册了一上午才搞定(+_+)。<br>3.打开<a href="https://colab.research.google.com/notebooks/welcome.ipynb，如下图所示" target="_blank" rel="noopener">https://colab.research.google.com/notebooks/welcome.ipynb，如下图所示</a>:<br><img src="/2020/03/14/shen-du-xue-xi-bai-piao-gu-ge-gpu/E:%5Cblog%5Csource_posts%5C%E6%B7%B1%E5%BA%A6%E5%AD%A6%E4%B9%A0-%E7%99%BD%E5%AB%96%E8%B0%B7%E6%AD%8Cgpu%5C1.png" alt="Welcome界面"><br>在界面左上角1处，点击文件-新建笔记本创建新的笔记本。<br>在文件旁边，点击修改-笔记本设置-硬件加速器，可选无、gpu和tpu。<br>在界面左上角2处，点击可进入谷歌云盘，上传文件供代码使用、下载笔记本ipynb文件或python py文件。<br>在界面右上角3处，点击连接云端虚拟机，谷歌会自动为你分配内存、硬盘等。<br>在界面左上角4处，点击文件夹图标-装载Google云端硬盘，就可以使用存在硬盘上的文件了（右键可获得文件路径）<br>在界面5处，鼠标放在上面会出现一个运行按钮，单机即可运行代码<br>云端平台本质上是个Linux虚拟机，所有Linux指令都可通过在指令前加!实现，比如!tar -xzvf test.tar.gz和!pip tensorflow==2.1.0<br>其他基础用法在Welcome界面都有，这里就不啰嗦了。</p>
+<h3 id="使用方法"><a href="#使用方法" class="headerlink" title="使用方法"></a>使用方法</h3><p>1.首先因为众所周知的原因，国内是用不了谷歌服务的，所以你要有个梯子，或者谷歌访问助手什么的。<br>2.然后你要有个谷歌账号，注册一个就行，这里可能会因为网络问题严重影响注册体验，我同学注册了一上午才搞定(+_+)。<br>3.打开<a href="https://colab.research.google.com/notebooks/welcome.ipynb" target="_blank" rel="noopener">https://colab.research.google.com/notebooks/welcome.ipynb</a> ，如下图所示:<br><img src="/2020/03/14/shen-du-xue-xi-bai-piao-gu-ge-gpu/1.png" alt="Welcome界面"><br>在界面左上角1处，点击文件-新建笔记本创建新的笔记本。<br>在文件旁边，点击修改-笔记本设置-硬件加速器，可选无、gpu和tpu。<br>在界面左上角2处，点击可进入谷歌云盘，上传文件供代码使用、下载笔记本ipynb文件或python py文件。<br>在界面右上角3处，点击连接云端虚拟机，谷歌会自动为你分配内存、硬盘等。<br>在界面左上角4处，点击文件夹图标-装载Google云端硬盘，就可以使用存在硬盘上的文件了（右键可获得文件路径）<br>在界面5处，鼠标放在上面会出现一个运行按钮，点击即可运行代码<br>云端平台本质上是个Linux虚拟机，所有Linux指令都可通过在指令前加!实现，比如!tar -xzvf test.tar.gz和!pip tensorflow==2.1.0<br>其他基础用法在Welcome界面都有，这里就不啰嗦了。</p>
 <!-- toc -->
-<h3 id="缺点"><a href="#缺点" class="headerlink" title="缺点"></a>缺点</h3><p>因为我用的谷歌访问助手是免费的，所有缺点很明显：老是断！加载也要半天或者直接加载失败，上传下载文件也比较慢……所以前两天又硬着头皮重新在本地搭建环境，终于在同学帮助下搞定了，以后代码都在本地跑了，很少用云端了吧。当然，本地跑1个，云端跑n个，还是挺香的q(≧▽≦q)</p>
+<h3 id="缺点"><a href="#缺点" class="headerlink" title="缺点"></a>缺点</h3><p>用了三周缺点越来越明显，因为我用的谷歌访问助手是免费的，所有缺点很明显：老是断连，一个不小心训练4、5个小时的网络就没了！加载笔记本也要半天或者直接加载失败，上传下载文件也比较慢……所以前两天又硬着头皮重新在本地搭建环境，终于在同学帮助下搞定了，以后代码都在本地跑了，应该很少用云端了吧。当然，本地跑1个，云端跑n个，还是挺香的q(≧▽≦q)</p>
 <script>
         document.querySelectorAll('.github-emoji')
           .forEach(el => {
@@ -914,9 +919,10 @@
                 <div class="card-content article-content">
                     <div class="summary block-with-text">
                         
-                            最近做一个图像识别的项目，要用到卷积神经网络，因为深度学习的框架搭建坑太多了，装了一个星期没装好，于是打算在云端搭建好的平台上跑代码。正好谷歌有个深度学习平台Colab，试了一下除了要翻墙外还挺好用的，就决定在这上面跑代码了。
+                            
+最近做一个图像识别的项目，要用到卷积神经网络，因为深度学习的框架搭建坑太多了，装了一个星期没装好，于是打算在云端搭建好的平台上跑代码。正好谷歌有个深度学习平台Colab，试了一下除了要翻墙外还可以，就决定在这上面跑代码了。
 
-简介Col
+简介Cola
                         
                     </div>
                     <div class="publish-info">
