@@ -5,8 +5,7 @@
 <head>
     <meta charset="utf-8">
     <meta name="keywords" content="图像降噪、放大神器：waifu2x-caffe, Hexo">
-    <meta name="description" content="
-　　项目地址&amp;amp;下载地址：https://github.com/lltcggie/waifu2x-caffe/releases/tag/1.2.0.2　　针对真实照片和二次元插图提供了多种降噪和放大算法（我看到放大模型中有个ResN">
+    <meta name="description" content="">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
     <meta name="renderer" content="webkit|ie-stand|ie-comp">
@@ -14,6 +13,9 @@
     <meta name="format-detection" content="telephone=no">
     <meta name="apple-mobile-web-app-capable" content="yes">
     <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+
+
     <title>图像降噪、放大神器：waifu2x-caffe | Hexo</title>
     <link rel="icon" type="image/png" href="/favicon.png">
 
@@ -26,7 +28,7 @@
     <link rel="stylesheet" type="text/css" href="/css/my.css">
 
     <script src="/libs/jquery/jquery.min.js"></script>
-    
+
 <link rel="stylesheet" href="/css/prism-tomorrow.css" type="text/css"><link rel="stylesheet" href="\assets\css\APlayer.min.css" class="aplayer-style-marker">
 <script src="\assets\js\APlayer.min.js" class="aplayer-script-marker"></script>
 <script src="\assets\js\Meting.min.js" class="meting-script-marker"></script>
@@ -134,6 +136,7 @@
   </li>
 </ul>
 
+
 <div id="mobile-nav" class="side-nav sidenav">
 
     <div class="mobile-head bg-color">
@@ -239,6 +242,7 @@
         
     </ul>
 </div>
+
 
         </div>
 
@@ -393,17 +397,17 @@
                 
 
                 
-                    <span id="busuanzi_container_site_pv" style='display:none'></span> 
-		    <i class="fa fa-eye fa-fw"></i>阅读次数:&nbsp;&nbsp; 
-		    <span id="busuanzi_value_page_pv" ></span>
+                    <div id="busuanzi_container_page_pv" class="info-break-policy">
+                        <i class="far fa-eye fa-fw"></i>阅读次数:&nbsp;&nbsp;
+                        <span id="busuanzi_value_page_pv"></span>
+                    </div>
 				
             </div>
-
         </div>
         <hr class="clearfix">
         <div class="card-content article-card-content">
             <div id="articleContent">
-                <div id="aplayer-XnkKwpRB" class="aplayer aplayer-tag-marker meting-tag-marker" data-id="569212270" data-server="netease" data-type="song" data-mode="circulation" data-autoplay="false" data-mutex="true" data-listmaxheight="340px" data-preload="auto" data-theme="#555"></div>
+                <div id="aplayer-aCHEFauX" class="aplayer aplayer-tag-marker meting-tag-marker" data-id="569212270" data-server="netease" data-type="song" data-mode="circulation" data-autoplay="false" data-mutex="true" data-listmaxheight="340px" data-preload="auto" data-theme="#555"></div>
 <p>　　项目地址&amp;下载地址：<a href="https://github.com/lltcggie/waifu2x-caffe/releases/tag/1.2.0.2" target="_blank" rel="noopener">https://github.com/lltcggie/waifu2x-caffe/releases/tag/1.2.0.2</a><br>　　针对真实照片和二次元插图提供了多种降噪和放大算法（我看到放大模型中有个ResNet10，难不成这玩意儿还能用卷积神经网络进行深度学习？），而且用了Nvidia卡和cuDNN加速，真是又快又好用。放大效果请看下图：<br><img src="/2020/02/18/tu-xiang-jiang-zao-fang-da-shen-qi-waifu2x-caffe/%E6%95%88%E6%9E%9C1.jpg" alt="放大&amp;降噪效果-希儿&amp;布洛尼亚"><br>　　左边是低分辨率原图在widows照片应用中直接放大后的样子，右边则是采用upRGB模型，2级降噪、放大4倍后的图片，整个处理耗时不到2s。可以看到，照片经过放大后并没有“变糊”，而且速度也很快。但是，是不是感觉放大后的图片怪怪的？emm，来看看真正的高清原图：<br><img src="/2020/02/18/tu-xiang-jiang-zao-fang-da-shen-qi-waifu2x-caffe/%E5%8E%9F%E5%9B%BE.jpg" alt="高清原图-希儿&amp;布洛尼亚"><br>　　虽然放大效果整体看来不错，但是低分辨率图像中缺少的细节经过降噪后就完全丢掉了（注意看拿着烟花棒的希儿的右手、两人的眼睛和背景的大烟花，还有最底下的水印）。<br>　　而且，如果你的电脑上没有N卡或是没装cuDNN，那就只能用cpu对图像进行处理，那个速度……我的1050ti不到2s就完成的事情i5-7300足足用了14s，这还是对小图片的放大，如果要放大高清大图，没有N卡的机子估计就要告别这个软件了。而cuDNN也比较麻烦，如果没有，得去Nvidia官网下载，下载还得注册……总之就是麻烦，建议百度个教程跟着做，我就不示范了。弄好后在最右边的应用设置选择CUDA，然后点击cuDNN检测，如果你都装好了，它就会弹出“可以使用cuDNN”的窗口，就可以正常使用软件了。</p>
 <script>
         document.querySelectorAll('.github-emoji')
@@ -438,7 +442,7 @@
                     </i>
                 </span>
                 <span class="reprint-info">
-                    <a href="https://caterinale.github.io" rel="external nofollow noreferrer">Caterina</a>
+                    <a href="/about" rel="external nofollow noreferrer">Caterina</a>
                 </span>
             </div>
             <div class="reprint__type">
@@ -461,7 +465,7 @@
                     本博客所有文章除特別声明外，均采用
                     <a href="https://creativecommons.org/licenses/by/4.0/deed.zh" rel="external nofollow noreferrer" target="_blank">CC BY 4.0</a>
                     许可协议。转载请注明来源
-                    <a href="https://caterinale.github.io" target="_blank">Caterina</a>
+                    <a href="/about" target="_blank">Caterina</a>
                     !
                 </span>
             </div>
@@ -503,9 +507,8 @@
                 </div>
                 <div class="post_share" style="zoom: 80%; width: fit-content; display: inline-block; float: right; margin: -0.15rem 0;">
                     <link rel="stylesheet" type="text/css" href="/libs/share/css/share.min.css">
-
 <div id="article-share">
-    
+
     
     <div class="social-share" data-sites="twitter,facebook,google,qq,qzone,wechat,weibo,douban,linkedin" data-wechat-qrcode-helper="<p>微信扫一扫即可分享！</p>"></div>
     <script src="/libs/share/js/social-share.min.js"></script>
@@ -767,7 +770,7 @@
 </style>
 
 <div class="card valine-card" data-aos="fade-up">
-    <div class="comment_headling" style="font-size: 20px; font-weight: 700; position: relative; left: 20px; top: 15px; padding-bottom: 5px;">
+    <div class="comment_headling" style="font-size: 20px; font-weight: 700; position: relative; padding-left: 20px; top: 15px; padding-bottom: 5px;">
         <i class="fas fa-comments fa-fw" aria-hidden="true"></i>
         <span>评论</span>
     </div>
@@ -785,12 +788,14 @@
         notify: 'false' === 'true',
         verify: 'false' === 'true',
         visitor: 'true' === 'true',
-        avatar: 'mm',
+        avatar: 'wavatar',
         pageSize: '10',
         lang: 'zh-cn',
-        placeholder: 'ヾﾉ≧∀≦)o来啊，快活啊! '
+        placeholder: '输入昵称即可评论   ヾﾉ≧∀≦)o来啊，快活啊! '
     });
 </script>
+
+    
 
     
 
@@ -990,13 +995,14 @@ code[class*="language-"], pre[class*="language-"] { white-space: pre !important;
 
 
 
+
     <footer class="page-footer bg-color">
     
     <div class="container row center-align" style="margin-bottom: 0px !important;">
         <div class="col s12 m8 l8 copy-right">
             Copyright&nbsp;&copy;
             <span id="year">2019</span>
-            <a href="https://caterinale.github.io" target="_blank">Caterina</a>
+            <a href="/about" target="_blank">Caterina</a>
             |&nbsp;Powered by&nbsp;<a href="https://hexo.io/" target="_blank">Hexo</a>
             |&nbsp;Theme&nbsp;<a href="https://github.com/blinkfox/hexo-theme-matery" target="_blank">Matery</a>
             <br>
@@ -1009,18 +1015,17 @@ code[class*="language-"], pre[class*="language-"] { white-space: pre !important;
             
             
             
-      
-    <span id="busuanzi_container_site_pv" style='display:none'></span>
-        <i class="fa fa-heart-o"></i>
-        本站总访问量 <span id="busuanzi_value_site_pv" class="white-color"></span>
-
-
-
-
-    <span id="busuanzi_container_site_uv" style='display:none'></span>
-        人次,&nbsp;访客数 <span id="busuanzi_value_site_uv" class="white-color"></span> 人.
-
-
+            <span id="busuanzi_container_site_pv">
+                |&nbsp;<i class="far fa-eye"></i>&nbsp;总访问量:&nbsp;<span id="busuanzi_value_site_pv"
+                    class="white-color"></span>&nbsp;次
+            </span>
+            
+            
+            <span id="busuanzi_container_site_uv">
+                |&nbsp;<i class="fas fa-users"></i>&nbsp;总访问人数:&nbsp;<span id="busuanzi_value_site_uv"
+                    class="white-color"></span>&nbsp;人
+            </span>
+            
             <br>
             
             <br>
@@ -1075,9 +1080,10 @@ code[class*="language-"], pre[class*="language-"] { white-space: pre !important;
 <script src="/js/search.js"></script>
 <script type="text/javascript">
 $(function () {
-    searchFunc("/" + "search.xml", 'searchInput', 'searchResult');
+    searchFunc("/search.xml", 'searchInput', 'searchResult');
 });
 </script>
+
     <!-- 回到顶部按钮 -->
 <div id="backTop" class="top-scroll">
     <a class="btn-floating btn-large waves-effect waves-light" href="#!">
@@ -1092,9 +1098,6 @@ $(function () {
     <script src="/libs/scrollprogress/scrollProgress.min.js"></script>
     <script src="/libs/lightGallery/js/lightgallery-all.min.js"></script>
     <script src="/js/matery.js"></script>
-
-    <!-- Global site tag (gtag.js) - Google Analytics -->
-
 
     <!-- Baidu Analytics -->
 
@@ -1130,11 +1133,11 @@ $(function () {
     
 
     
-    
+
     
     <script src="/libs/instantpage/instantpage.js" type="module"></script>
     
 
-<script src="/live2dw/lib/L2Dwidget.min.js?094cbace49a39548bed64abff5988b05"></script><script>L2Dwidget.init({"pluginRootPath":"live2dw/","pluginJsPath":"lib/","pluginModelPath":"assets/","tagMode":false,"debug":false,"model":{"jsonPath":"/live2dw/assets/z16.model.json"},"display":{"position":"right","width":170,"height":340},"mobile":{"show":true},"log":false});</script></body>
+<script src="/live2dw/lib/L2Dwidget.min.js?094cbace49a39548bed64abff5988b05"></script><script>L2Dwidget.init({"pluginRootPath":"live2dw/","pluginJsPath":"lib/","pluginModelPath":"assets/","tagMode":false,"debug":false,"model":{"jsonPath":"/live2dw/assets/z16.model.json"},"display":{"position":"right","width":200,"height":400},"mobile":{"show":true},"log":false});</script></body>
 
 </html>

@@ -5,9 +5,7 @@
 <head>
     <meta charset="utf-8">
     <meta name="keywords" content="[转]告别百度网盘！利用OneIndex-Serverless无成本搭建属于你自己的网盘, Hexo">
-    <meta name="description" content="
-
-原文及作者　　知乎链接：https://zhuanlan.zhihu.com/p/74538287?utm_source=qq&amp;amp;utm_medium=social&amp;amp;utm_oi=957630127903924224　　G">
+    <meta name="description" content="">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
     <meta name="renderer" content="webkit|ie-stand|ie-comp">
@@ -15,6 +13,9 @@
     <meta name="format-detection" content="telephone=no">
     <meta name="apple-mobile-web-app-capable" content="yes">
     <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+
+
     <title>[转]告别百度网盘！利用OneIndex-Serverless无成本搭建属于你自己的网盘 | Hexo</title>
     <link rel="icon" type="image/png" href="/favicon.png">
 
@@ -27,7 +28,7 @@
     <link rel="stylesheet" type="text/css" href="/css/my.css">
 
     <script src="/libs/jquery/jquery.min.js"></script>
-    
+
 <link rel="stylesheet" href="/css/prism-tomorrow.css" type="text/css"><link rel="stylesheet" href="\assets\css\APlayer.min.css" class="aplayer-style-marker">
 <script src="\assets\js\APlayer.min.js" class="aplayer-script-marker"></script>
 <script src="\assets\js\Meting.min.js" class="meting-script-marker"></script>
@@ -135,6 +136,7 @@
   </li>
 </ul>
 
+
 <div id="mobile-nav" class="side-nav sidenav">
 
     <div class="mobile-head bg-color">
@@ -240,6 +242,7 @@
         
     </ul>
 </div>
+
 
         </div>
 
@@ -390,14 +393,14 @@
     #toc-content .toc-link::before {
         background-color: transparent;
         max-height: 25px;
+
+        position: absolute;
+        right: 23.5vw;
+        display: block;
     }
 
     #toc-content .is-active-link {
         color: #42b983;
-    }
-
-    #toc-content .is-active-link::before {
-        background-color: #42b983;
     }
 
     #floating-toc-btn {
@@ -485,17 +488,17 @@
                 
 
                 
-                    <span id="busuanzi_container_site_pv" style='display:none'></span> 
-		    <i class="fa fa-eye fa-fw"></i>阅读次数:&nbsp;&nbsp; 
-		    <span id="busuanzi_value_page_pv" ></span>
+                    <div id="busuanzi_container_page_pv" class="info-break-policy">
+                        <i class="far fa-eye fa-fw"></i>阅读次数:&nbsp;&nbsp;
+                        <span id="busuanzi_value_page_pv"></span>
+                    </div>
 				
             </div>
-
         </div>
         <hr class="clearfix">
         <div class="card-content article-card-content">
             <div id="articleContent">
-                <div id="aplayer-imLECxuZ" class="aplayer aplayer-tag-marker meting-tag-marker" data-id="27221414" data-server="netease" data-type="song" data-mode="circulation" data-autoplay="false" data-mutex="true" data-listmaxheight="340px" data-preload="auto" data-theme="#555"></div>
+                <div id="aplayer-cILKDgwe" class="aplayer aplayer-tag-marker meting-tag-marker" data-id="27221414" data-server="netease" data-type="song" data-mode="circulation" data-autoplay="false" data-mutex="true" data-listmaxheight="340px" data-preload="auto" data-theme="#555"></div>
 <!-- toc -->
 <h3 id="原文及作者"><a href="#原文及作者" class="headerlink" title="原文及作者"></a>原文及作者</h3><p>　　知乎链接：<a href="https://zhuanlan.zhihu.com/p/74538287?utm_source=qq&amp;utm_medium=social&amp;utm_oi=957630127903924224" target="_blank" rel="noopener">https://zhuanlan.zhihu.com/p/74538287?utm_source=qq&amp;utm_medium=social&amp;utm_oi=957630127903924224</a><br>　　GitHub：<a href="https://github.com/LiuChangFreeman/OneIndex-Serverless" target="_blank" rel="noopener">https://github.com/LiuChangFreeman/OneIndex-Serverless</a></p>
 <!-- toc -->
@@ -536,7 +539,7 @@
                     </i>
                 </span>
                 <span class="reprint-info">
-                    <a href="https://caterinale.github.io" rel="external nofollow noreferrer">Caterina</a>
+                    <a href="/about" rel="external nofollow noreferrer">Caterina</a>
                 </span>
             </div>
             <div class="reprint__type">
@@ -559,7 +562,7 @@
                     本博客所有文章除特別声明外，均采用
                     <a href="https://creativecommons.org/licenses/by/4.0/deed.zh" rel="external nofollow noreferrer" target="_blank">CC BY 4.0</a>
                     许可协议。转载请注明来源
-                    <a href="https://caterinale.github.io" target="_blank">Caterina</a>
+                    <a href="/about" target="_blank">Caterina</a>
                     !
                 </span>
             </div>
@@ -597,9 +600,8 @@
                 </div>
                 <div class="post_share" style="zoom: 80%; width: fit-content; display: inline-block; float: right; margin: -0.15rem 0;">
                     <link rel="stylesheet" type="text/css" href="/libs/share/css/share.min.css">
-
 <div id="article-share">
-    
+
     
     <div class="social-share" data-sites="twitter,facebook,google,qq,qzone,wechat,weibo,douban,linkedin" data-wechat-qrcode-helper="<p>微信扫一扫即可分享！</p>"></div>
     <script src="/libs/share/js/social-share.min.js"></script>
@@ -861,7 +863,7 @@
 </style>
 
 <div class="card valine-card" data-aos="fade-up">
-    <div class="comment_headling" style="font-size: 20px; font-weight: 700; position: relative; left: 20px; top: 15px; padding-bottom: 5px;">
+    <div class="comment_headling" style="font-size: 20px; font-weight: 700; position: relative; padding-left: 20px; top: 15px; padding-bottom: 5px;">
         <i class="fas fa-comments fa-fw" aria-hidden="true"></i>
         <span>评论</span>
     </div>
@@ -879,12 +881,14 @@
         notify: 'false' === 'true',
         verify: 'false' === 'true',
         visitor: 'true' === 'true',
-        avatar: 'mm',
+        avatar: 'wavatar',
         pageSize: '10',
         lang: 'zh-cn',
-        placeholder: 'ヾﾉ≧∀≦)o来啊，快活啊! '
+        placeholder: '输入昵称即可评论   ヾﾉ≧∀≦)o来啊，快活啊! '
     });
 </script>
+
+    
 
     
 
@@ -1169,13 +1173,14 @@ code[class*="language-"], pre[class*="language-"] { white-space: pre !important;
 
 
 
+
     <footer class="page-footer bg-color">
     
     <div class="container row center-align" style="margin-bottom: 0px !important;">
         <div class="col s12 m8 l8 copy-right">
             Copyright&nbsp;&copy;
             <span id="year">2019</span>
-            <a href="https://caterinale.github.io" target="_blank">Caterina</a>
+            <a href="/about" target="_blank">Caterina</a>
             |&nbsp;Powered by&nbsp;<a href="https://hexo.io/" target="_blank">Hexo</a>
             |&nbsp;Theme&nbsp;<a href="https://github.com/blinkfox/hexo-theme-matery" target="_blank">Matery</a>
             <br>
@@ -1188,18 +1193,17 @@ code[class*="language-"], pre[class*="language-"] { white-space: pre !important;
             
             
             
-      
-    <span id="busuanzi_container_site_pv" style='display:none'></span>
-        <i class="fa fa-heart-o"></i>
-        本站总访问量 <span id="busuanzi_value_site_pv" class="white-color"></span>
-
-
-
-
-    <span id="busuanzi_container_site_uv" style='display:none'></span>
-        人次,&nbsp;访客数 <span id="busuanzi_value_site_uv" class="white-color"></span> 人.
-
-
+            <span id="busuanzi_container_site_pv">
+                |&nbsp;<i class="far fa-eye"></i>&nbsp;总访问量:&nbsp;<span id="busuanzi_value_site_pv"
+                    class="white-color"></span>&nbsp;次
+            </span>
+            
+            
+            <span id="busuanzi_container_site_uv">
+                |&nbsp;<i class="fas fa-users"></i>&nbsp;总访问人数:&nbsp;<span id="busuanzi_value_site_uv"
+                    class="white-color"></span>&nbsp;人
+            </span>
+            
             <br>
             
             <br>
@@ -1254,9 +1258,10 @@ code[class*="language-"], pre[class*="language-"] { white-space: pre !important;
 <script src="/js/search.js"></script>
 <script type="text/javascript">
 $(function () {
-    searchFunc("/" + "search.xml", 'searchInput', 'searchResult');
+    searchFunc("/search.xml", 'searchInput', 'searchResult');
 });
 </script>
+
     <!-- 回到顶部按钮 -->
 <div id="backTop" class="top-scroll">
     <a class="btn-floating btn-large waves-effect waves-light" href="#!">
@@ -1271,9 +1276,6 @@ $(function () {
     <script src="/libs/scrollprogress/scrollProgress.min.js"></script>
     <script src="/libs/lightGallery/js/lightgallery-all.min.js"></script>
     <script src="/js/matery.js"></script>
-
-    <!-- Global site tag (gtag.js) - Google Analytics -->
-
 
     <!-- Baidu Analytics -->
 
@@ -1309,11 +1311,11 @@ $(function () {
     
 
     
-    
+
     
     <script src="/libs/instantpage/instantpage.js" type="module"></script>
     
 
-<script src="/live2dw/lib/L2Dwidget.min.js?094cbace49a39548bed64abff5988b05"></script><script>L2Dwidget.init({"pluginRootPath":"live2dw/","pluginJsPath":"lib/","pluginModelPath":"assets/","tagMode":false,"debug":false,"model":{"jsonPath":"/live2dw/assets/z16.model.json"},"display":{"position":"right","width":170,"height":340},"mobile":{"show":true},"log":false});</script></body>
+<script src="/live2dw/lib/L2Dwidget.min.js?094cbace49a39548bed64abff5988b05"></script><script>L2Dwidget.init({"pluginRootPath":"live2dw/","pluginJsPath":"lib/","pluginModelPath":"assets/","tagMode":false,"debug":false,"model":{"jsonPath":"/live2dw/assets/z16.model.json"},"display":{"position":"right","width":200,"height":400},"mobile":{"show":true},"log":false});</script></body>
 
 </html>
