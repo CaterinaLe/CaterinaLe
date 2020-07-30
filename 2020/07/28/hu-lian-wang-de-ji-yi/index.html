@@ -4,7 +4,7 @@
 
 <head>
     <meta charset="utf-8">
-    <meta name="keywords" content="图片转字符图：从不会到不屑———在matlab命令行窗口中输出bad apple动画, Hexo">
+    <meta name="keywords" content="互联网的记忆, Hexo">
     <meta name="description" content="">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
@@ -16,7 +16,7 @@
     <!-- Global site tag (gtag.js) - Google Analytics -->
 
 
-    <title>图片转字符图：从不会到不屑———在matlab命令行窗口中输出bad apple动画 | Hexo</title>
+    <title>互联网的记忆 | Hexo</title>
     <link rel="icon" type="image/png" href="/favicon.png">
 
     <link rel="stylesheet" type="text/css" href="/libs/awesome/css/all.css">
@@ -29,10 +29,7 @@
 
     <script src="/libs/jquery/jquery.min.js"></script>
 
-<link rel="stylesheet" href="/css/prism-tomorrow.css" type="text/css"><link rel="stylesheet" href="\assets\css\APlayer.min.css" class="aplayer-style-marker">
-<script src="\assets\js\APlayer.min.js" class="aplayer-script-marker"></script>
-<script src="\assets\js\Meting.min.js" class="meting-script-marker"></script>
-</head>
+<link rel="stylesheet" href="/css/prism-tomorrow.css" type="text/css"></head>
 
 
 <body>
@@ -311,12 +308,12 @@
 
 
 
-<div class="bg-cover pd-header post-cover" style="background-image: url('/medias/featureimages/15.jpg')">
+<div class="bg-cover pd-header post-cover" style="background-image: url('/source/images/0.jpg')">
     <div class="container" style="right: 0px;left: 0px;">
         <div class="row">
             <div class="col s12 m12 l12">
                 <div class="brand">
-                    <h1 class="description center-align post-title">图片转字符图：从不会到不屑———在matlab命令行窗口中输出bad apple动画</h1>
+                    <h1 class="description center-align post-title">互联网的记忆</h1>
                 </div>
             </div>
         </div>
@@ -433,31 +430,14 @@
                     
                     <div class="article-tag">
                         
-                            <a href="/tags/%E5%AD%97%E7%AC%A6%E5%9B%BE/">
-                                <span class="chip bg-color">字符图</span>
-                            </a>
-                        
-                            <a href="/tags/matlab/">
-                                <span class="chip bg-color">matlab</span>
-                            </a>
-                        
-                            <a href="/tags/bad-apple/">
-                                <span class="chip bg-color">bad apple</span>
+                            <a href="/tags/%E6%97%B6%E4%BA%8B%E8%AE%B0/">
+                                <span class="chip bg-color">时事记</span>
                             </a>
                         
                     </div>
                     
                 </div>
                 <div class="col s5 right-align">
-                    
-                    <div class="post-cate">
-                        <i class="fas fa-bookmark fa-fw icon-category"></i>
-                        
-                            <a href="/categories/%E6%8A%80/" class="post-category">
-                                技
-                            </a>
-                        
-                    </div>
                     
                 </div>
             </div>
@@ -466,28 +446,28 @@
                 
                 <div class="post-date info-break-policy">
                     <i class="far fa-calendar-minus fa-fw"></i>发布日期:&nbsp;&nbsp;
-                    2020-02-17
+                    2020-07-28
                 </div>
                 
 
                 
                 <div class="post-date info-break-policy">
                     <i class="far fa-calendar-check fa-fw"></i>更新日期:&nbsp;&nbsp;
-                    2020-02-18
+                    2020-07-28
                 </div>
                 
 
                 
                 <div class="info-break-policy">
                     <i class="far fa-file-word fa-fw"></i>文章字数:&nbsp;&nbsp;
-                    1.3k
+                    308
                 </div>
                 
 
                 
                 <div class="info-break-policy">
                     <i class="far fa-clock fa-fw"></i>阅读时长:&nbsp;&nbsp;
-                    5 分
+                    1 分
                 </div>
                 
 
@@ -502,95 +482,14 @@
         <hr class="clearfix">
         <div class="card-content article-card-content">
             <div id="articleContent">
-                <div id="aplayer-cOFrCqgY" class="aplayer aplayer-tag-marker meting-tag-marker" data-id="7428376268" data-server="tencent" data-type="playlist" data-mode="circulation" data-autoplay="false" data-mutex="true" data-listmaxheight="340px" data-preload="auto" data-theme="#555"></div>
-<p>　　某日同学给我看dy上一个短视频，是将视频转换成ASKII字符输出，这都是十年前的网友玩的了，怎么能难倒我呢，我决定用matlab也做一个。不过饭要一口一口吃，我先做了一个小程序，读取电脑中的图片，转换为字符图，输出到matlab命令行窗口并写入txt文件中。</p>
-<!-- toc -->
-<h3 id="原理"><a href="#原理" class="headerlink" title="原理"></a>原理</h3><p>　　每个字符点阵，比如“W”和“-”,它们黑色所占的比例不同，给人视觉上带来的效果就是“W”比“-”更黑，我们用“&amp;#@”等代替图片中较黑（灰度值低）的像素，用“`-.”等代替图片中较白（灰度值高）的像素，这样，图片就被转换成了字符图。那么，合理的灰度值-字符对应表就是整个程序的关键。我采用的灰度-字符变换关系如下所示：<br>    <img src="/2020/02/17/tu-pian-zhuan-zi-fu-tu-cong-bu-hui-dao-bu-xie-zai-matlab-ming-ling-xing-chuang-kou-zhong-shu-chu-bad-apple-dong-hua/%E7%81%B0%E5%BA%A6.jpg" alt="灰度-字符变换关系"></p>
-<!-- toc -->
-<h3 id="黑白字符图"><a href="#黑白字符图" class="headerlink" title="黑白字符图"></a>黑白字符图</h3><p>　　matlab命令行窗口行距比较大，所以txt显示效果较好，不过输入图片不能过大，因为txt每行的字数有上限，超过就会自动换行，导致图像错乱；而matlab命令行倒不会因为字数限制而导致图像错乱，而它的行距过大的问题可以用每三行像素输出一行字符的办法解决，不过这样也牺牲了行像素。这两种方案都不是特别完美，我更喜欢小图用txt显示，大图用命令行显示，最终效果如下所示（字体设为宋体，字号1）：<br>    <img src="/2020/02/17/tu-pian-zhuan-zi-fu-tu-cong-bu-hui-dao-bu-xie-zai-matlab-ming-ling-xing-chuang-kou-zhong-shu-chu-bad-apple-dong-hua/%E6%95%88%E6%9E%9C1.jpg" alt="字符图-希儿&amp;布洛尼亚"></p>
-<!-- toc -->
-<h3 id="色幻觉"><a href="#色幻觉" class="headerlink" title="色幻觉"></a>色幻觉</h3><p>　　上图的那种程度不算什么,毕竟彩色图最后变成黑白的字符，总感觉少了什么。然后我在知乎上找到了超神奇的灰度-字符转换关系，如下所示：<br>    <img src="/2020/02/17/tu-pian-zhuan-zi-fu-tu-cong-bu-hui-dao-bu-xie-zai-matlab-ming-ling-xing-chuang-kou-zhong-shu-chu-bad-apple-dong-hua/%E7%81%B0%E5%BA%A62.jpg" alt="另一种灰度-字符变换关系"><br>　　效果：<br>    <img src="/2020/02/17/tu-pian-zhuan-zi-fu-tu-cong-bu-hui-dao-bu-xie-zai-matlab-ming-ling-xing-chuang-kou-zhong-shu-chu-bad-apple-dong-hua/%E6%95%88%E6%9E%9C2.jpg" alt="字符图-哆啦a梦"><br>　　仔细看看，是不是感觉有点奇怪：这张图好像是彩色的！<br>　　把字号改大到6再看看：<br>    <img src="/2020/02/17/tu-pian-zhuan-zi-fu-tu-cong-bu-hui-dao-bu-xie-zai-matlab-ming-ling-xing-chuang-kou-zhong-shu-chu-bad-apple-dong-hua/%E6%95%88%E6%9E%9C2%E6%94%BE%E5%A4%A7.jpg" alt="放大的字符图-哆啦a梦"><br>　　没错，黑白字符呈现出了彩色的图像。那个知乎答主说这是一种色幻觉，不过具体原因他没有给出，我也没查到可信的说法，所以此处暂时按下不表。</p>
-<!-- toc -->
-<h3 id="字符动画"><a href="#字符动画" class="headerlink" title="字符动画"></a>字符动画</h3><p>　　搞定了字符图的代码，做一个字符动画简直是小菜一碟，只要读取视频后逐帧处理输出就好了。本着“可以输出的地方就有bad apple”的原则，第一个字符视频就是bad apple了，这也是本站首页的视频：<br>    <video src="b4.mp4 " type="video/mp4" controls="controls" width="100%" height="100%"><br></video><br>　　可惜的是这个程序不能播放声音，bgm是我后期加的，而且不同的灰度-字符程序对于黑白二色视频来说，效果都不会太差。接下来看看色彩更丰富的fate hf -狗哥vs王哈桑：<br><video src="fate.mp4 " type="video/mp4" controls="controls" width="100%" height="100%"><br></video><br>　　……效果确实差强人意，不过这火花确实蛮好看😂。<br>　　总之，视频转字符并没有看起来那么难，这也是我从一窍不通到快速掌握并感到不屑的原因，明明matlab可以做很多更好玩的事情，但是为什么我的同学没有看到并分享给我！</p>
-<!-- toc -->
-<h3 id="代码"><a href="#代码" class="headerlink" title="代码"></a>代码</h3><p>灰度转字符（第一种变换）：</p>
-<pre><code>clc
-clear 
-close all
-p='$@B8&amp;M#*oahkbdpqwmO0QLCJUYXzcunxrjft/\|()1{}[]?-_+~&lt;&gt;i!l;:,\"^`. ';%灰度-字符转换关系
-%% 读入图像并显示 %%
-data=imread('img02.jpg');%读取图片
-figure
-imagesc(data)%显示原图片
-axis equal
-Gray_data=rgb2gray(data);%彩色图像转灰度图
-figure
-imagesc(Gray_data)%显示灰度图
-axis equal
-colormap gray
-%% 按照灰度矩阵生成字符矩阵 %%
-[m,n]=size(Gray_data);
-for i=1:m
-    for j=1:n
-        flag=fix(Gray_data(i,j)/4)+1;
-        Gray(i,j)=p(flag);
-        if mod(i,3)==1
-            Gray3((i+2)/3,j)=p(flag);%在命令行窗口中每三行像素输出一行字符
-        end
-    end
-end
-Gray3%在命令行窗口输出
-%% 写入文本文件 %%
-dlmwrite('test2.txt',Gray,'delimiter',' ','newline','pc')</code></pre><p>灰度转字符（第二种变换）：</p>
-<pre><code>clc
-clear 
-close all
-p='$&amp;m8p*aou!.';%灰度-字符转换关系
-%% 读入图像并显示 %%
-data=imread('img02.jpg');%读取图片
-figure
-imagesc(data)%显示原图片
-axis equal
-Gray_data=rgb2gray(data);%彩色图像转灰度图
-figure
-imagesc(Gray_data)
-axis equal
-colormap gray
-%% 按照灰度矩阵生成字符矩阵 %%
-[m,n]=size(Gray_data);
-for i=1:m
-    for j=1:n
-        flag=fix(Gray_data(i,j)/25);
-        Gray(i,j)=p(flag+1);
-        if mod(i,3)==1
-            Gray3((i+2)/3,j)=p(flag+1);%在命令行窗口中每三行像素输出一行字符
-        end
-    end
-end
-Gray3%在命令行窗口输出
-%% 写入文本文件 %%
-dlmwrite('test.txt',Gray,'delimiter',' ','newline','pc')</code></pre><p>字符动画：</p>
-<pre><code>clc
-clear
-close all
-obj = VideoReader('1.mp4');%输入视频位置
-obj_numberofframe = obj.NumberOfFrame;%读取总的帧数
-obj_height = obj.Height;%读取视频帧高度
-obj_width = obj.Width;%读取视频帧宽度
-gr='$@B8&amp;WM#*oahkbdpqwmZO0QLCJUYXzcvunxrjft/\|()1{}[]?-_+~&lt;&gt;i!lI;:,\"^`. ';%灰度-字符转换关系
-for f=1:1:obj_numberofframe
-    frame = read(obj, f);%读取第f帧画面
-    Gray_data=rgb2gray(frame);%彩色图像转灰度图
-    for ii=1:3:obj_height%在命令行窗口中每三行像素输出一行字符
-        for j=1:1:obj_width
-            flag=fix(Gray_data(ii,j)/4)+5;
-            i=(ii+2)/3;
-            Gray(i,j)=gr(flag);%在命令行窗口中每三行像素输出一行字符
-        end
-    end
-    imshow(frame);%显示第f帧画面
-    Gray%在命令行窗口输出
-end</code></pre><script>
+                <h3 id="2020-7"><a href="#2020-7" class="headerlink" title="2020/7"></a>2020/7</h3><h3 id="蒙牛、伊利6大罪状"><a href="#蒙牛、伊利6大罪状" class="headerlink" title="蒙牛、伊利6大罪状"></a>蒙牛、伊利6大罪状</h3><p>　　7月9日，一篇名为《深扒蒙牛、伊利6大罪状，媒体不敢说，那就我来说》一文火了。随后，该公众号受到了蒙牛和伊利两家公司的联合投诉，文章被迫删除。<br>　　原作者罗列的蒙牛伊利“六大罪状”，具体为：</p>
+<p>　　1.2005~2008年，在伊利蒙牛的推动下，国家启动“禁鲜令”，低温鲜奶的外包装上不能再使用“鲜牛奶”等名称。</p>
+<p>　　2.蒙牛和伊利也和三鹿一样，添加了三聚氰胺。</p>
+<p>　　3.蒙牛伊利利用三聚氰胺事件，降低了奶制品质量。</p>
+<p>　　4.蒙牛爆出质量问题，微博禁止评论。</p>
+<p>　　5.2018年的伊利跨省追捕。</p>
+<p>　　6.蒙牛CEO当众表示：我们总把最好的产品投放到中国香港、新加坡市场。<br>　　如何看待？我早就不吃清真乳制品，现在连国产乳制品都不太敢碰了，还是恰本地奶吧。</p>
+<script>
         document.querySelectorAll('.github-emoji')
           .forEach(el => {
             if (!el.dataset.src) { return; }
@@ -633,7 +532,7 @@ end</code></pre><script>
                     </i>
                 </span>
                 <span class="reprint-info">
-                    <a href="https://caterinale.github.io/2020/02/17/tu-pian-zhuan-zi-fu-tu-cong-bu-hui-dao-bu-xie-zai-matlab-ming-ling-xing-chuang-kou-zhong-shu-chu-bad-apple-dong-hua/">https://caterinale.github.io/2020/02/17/tu-pian-zhuan-zi-fu-tu-cong-bu-hui-dao-bu-xie-zai-matlab-ming-ling-xing-chuang-kou-zhong-shu-chu-bad-apple-dong-hua/</a>
+                    <a href="https://caterinale.github.io/2020/07/28/hu-lian-wang-de-ji-yi/">https://caterinale.github.io/2020/07/28/hu-lian-wang-de-ji-yi/</a>
                 </span>
             </div>
             <div class="reprint__notice">
@@ -671,16 +570,8 @@ end</code></pre><script>
                     
                         <div class="article-tag">
                             
-                                <a href="/tags/%E5%AD%97%E7%AC%A6%E5%9B%BE/">
-                                    <span class="chip bg-color">字符图</span>
-                                </a>
-                            
-                                <a href="/tags/matlab/">
-                                    <span class="chip bg-color">matlab</span>
-                                </a>
-                            
-                                <a href="/tags/bad-apple/">
-                                    <span class="chip bg-color">bad apple</span>
+                                <a href="/tags/%E6%97%B6%E4%BA%8B%E8%AE%B0/">
+                                    <span class="chip bg-color">时事记</span>
                                 </a>
                             
                         </div>
@@ -985,55 +876,44 @@ end</code></pre><script>
 <article id="prenext-posts" class="prev-next articles">
     <div class="row article-row">
         
-        <div class="article col s12 m6" data-aos="fade-up">
+        <div class="article col s12 m6" data-aos="fade-up" data-aos="fade-up">
             <div class="article-badge left-badge text-color">
-                <i class="fas fa-chevron-left"></i>&nbsp;上一篇</div>
+                <i class="far fa-dot-circle"></i>&nbsp;本篇
+            </div>
             <div class="card">
-                <a href="/2020/02/18/tu-xiang-jiang-zao-fang-da-shen-qi-waifu2x-caffe/">
+                <a href="/2020/07/28/hu-lian-wang-de-ji-yi/">
                     <div class="card-image">
                         
+                        <img src="/source/images/0.jpg" class="responsive-img" alt="互联网的记忆">
                         
-                        <img src="/medias/featureimages/6.jpg" class="responsive-img" alt="图像降噪、放大神器：waifu2x-caffe">
-                        
-                        <span class="card-title">图像降噪、放大神器：waifu2x-caffe</span>
+                        <span class="card-title">互联网的记忆</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
                     <div class="summary block-with-text">
                         
-                            
-　　项目地址&amp;下载地址：https://github.com/lltcggie/waifu2x-caffe/releases/tag/1.2.0.2　　针对真实照片和二次元插图提供了多种降噪和放大算法（我看到放大模型中有个ResN
+                            2020/7蒙牛、伊利6大罪状　　7月9日，一篇名为《深扒蒙牛、伊利6大罪状，媒体不敢说，那就我来说》一文火了。随后，该公众号受到了蒙牛和伊利两家公司的联合投诉，文章被迫删除。　　原作者罗列的蒙牛伊利“六大罪状”，具体为：
+　　1.2005
                         
                     </div>
                     <div class="publish-info">
-                        <span class="publish-date">
-                            <i class="far fa-clock fa-fw icon-date"></i>2020-02-18
-                        </span>
+                            <span class="publish-date">
+                                <i class="far fa-clock fa-fw icon-date"></i>2020-07-28
+                            </span>
                         <span class="publish-author">
                             
-                            <i class="fas fa-bookmark fa-fw icon-category"></i>
-                            
-                            <a href="/categories/%E5%99%A8%E2%80%94%E8%BD%AF%E4%BB%B6/" class="post-category">
-                                    器—软件
-                                </a>
-                            
+                            <i class="fas fa-user fa-fw"></i>
+                            Caterina
                             
                         </span>
                     </div>
                 </div>
+
                 
                 <div class="card-action article-tags">
                     
-                    <a href="/tags/waifu2x-caffe/">
-                        <span class="chip bg-color">waifu2x-caffe</span>
-                    </a>
-                    
-                    <a href="/tags/%E5%9B%BE%E5%83%8F%E6%94%BE%E5%A4%A7/">
-                        <span class="chip bg-color">图像放大</span>
-                    </a>
-                    
-                    <a href="/tags/%E5%9B%BE%E5%83%8F%E5%8E%BB%E5%99%AA/">
-                        <span class="chip bg-color">图像去噪</span>
+                    <a href="/tags/%E6%97%B6%E4%BA%8B%E8%AE%B0/">
+                        <span class="chip bg-color">时事记</span>
                     </a>
                     
                 </div>
@@ -1047,13 +927,13 @@ end</code></pre><script>
                 下一篇&nbsp;<i class="fas fa-chevron-right"></i>
             </div>
             <div class="card">
-                <a href="/2020/02/14/jin-tian-ting-dao-de-yi-ge-bei-lun/">
+                <a href="/2020/05/16/yong-yi-la-guan-zeng-qiang-wifi-xin-hao/">
                     <div class="card-image">
                         
                         
-                        <img src="/medias/featureimages/15.jpg" class="responsive-img" alt="今天听到的一个悖论">
+                        <img src="/medias/featureimages/7.jpg" class="responsive-img" alt="用易拉罐增强wifi信号">
                         
-                        <span class="card-title">今天听到的一个悖论</span>
+                        <span class="card-title">用易拉罐增强wifi信号</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
@@ -1061,21 +941,19 @@ end</code></pre><script>
                         
                             
 
-一个问题　　嫌犯A（假设就是读者你）、B中的一个杀了人，警察在审问。　　A：我没有杀人。　　B：我们中有且仅有一个人说了真话。　　请问谁是杀人犯？
-
-推理　　警察开始推理：　　1.如果B说的是真话，那么由B的话可知，只有B说了真话，A说
+背景　　因为疫情的原因一直没开学，然后跟着爸妈到了一个工地旁边（家里承包工地食堂），这里没装宽带，不过100米外的项目部有宽带和wifi。如果直接拉网线过来的话太费钱了，所以我打算用路由器桥接的方法，将子路由器和项目部的母路由器通过无线
                         
                     </div>
                     <div class="publish-info">
                             <span class="publish-date">
-                                <i class="far fa-clock fa-fw icon-date"></i>2020-02-14
+                                <i class="far fa-clock fa-fw icon-date"></i>2020-05-16
                             </span>
                         <span class="publish-author">
                             
                             <i class="fas fa-bookmark fa-fw icon-category"></i>
                             
-                            <a href="/categories/%E4%BE%83/" class="post-category">
-                                    侃
+                            <a href="/categories/%E7%A1%AC/" class="post-category">
+                                    硬
                                 </a>
                             
                             
@@ -1085,8 +963,16 @@ end</code></pre><script>
                 
                 <div class="card-action article-tags">
                     
-                    <a href="/tags/%E6%82%96%E8%AE%BA/">
-                        <span class="chip bg-color">悖论</span>
+                    <a href="/tags/%E8%B7%AF%E7%94%B1%E5%99%A8/">
+                        <span class="chip bg-color">路由器</span>
+                    </a>
+                    
+                    <a href="/tags/wifi/">
+                        <span class="chip bg-color">wifi</span>
+                    </a>
+                    
+                    <a href="/tags/%E6%97%A0%E7%BA%BF%E6%A1%A5%E6%8E%A5wds/">
+                        <span class="chip bg-color">无线桥接wds</span>
                     </a>
                     
                 </div>

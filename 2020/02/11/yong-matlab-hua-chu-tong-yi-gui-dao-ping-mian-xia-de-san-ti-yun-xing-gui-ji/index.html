@@ -498,7 +498,7 @@
         <hr class="clearfix">
         <div class="card-content article-card-content">
             <div id="articleContent">
-                <div id="aplayer-AXYJzVxC" class="aplayer aplayer-tag-marker meting-tag-marker" data-id="7433153279" data-server="tencent" data-type="playlist" data-mode="circulation" data-autoplay="false" data-mutex="true" data-listmaxheight="340px" data-preload="auto" data-theme="#555"></div>
+                <div id="aplayer-HKwuZTqE" class="aplayer aplayer-tag-marker meting-tag-marker" data-id="7433153279" data-server="tencent" data-type="playlist" data-mode="circulation" data-autoplay="false" data-mutex="true" data-listmaxheight="340px" data-preload="auto" data-theme="#555"></div>
 <p>　　一直想模拟一下三体运行，这次终于用matlab做了个小程序，代码附在文后。</p>
 <!-- toc -->
 <h3 id="思路"><a href="#思路" class="headerlink" title="思路"></a>思路</h3><p>　　假设在极短的时间dt内，天体的速度(vx,vy)不会改变，则dt时间后天体的坐标x’=x+vx＊dt，y’=y+vy＊dt；<br>　　假设在极短的时间dt内，天体的加速度(ax,ay)不会改变，则dt时间后天体的速度vx’=vx+ax＊dt，vy’=vy+ay＊dt；<br>　　天体受到的引力由万有引力公式求得，除以质量就是加速度，这个都会的，不说了。</p>
@@ -1264,7 +1264,7 @@ code[class*="language-"], pre[class*="language-"] { white-space: pre !important;
             <br>
             
             &nbsp;<i class="fas fa-chart-area"></i>&nbsp;站点总字数:&nbsp;<span
-                class="white-color">7.3k</span>&nbsp;字
+                class="white-color">7.6k</span>&nbsp;字
             
             
             
@@ -1383,7 +1383,20 @@ $(function () {
     
 
     
-
+    <script type="text/javascript">
+        var OriginTitile = document.title,
+            st;
+        document.addEventListener("visibilitychange", function () {
+            document.hidden ? (document.title = "来抓我呀~", clearTimeout(st)) : (document.title =
+                "(๑•̀ㅂ•́) ✧被抓住了～", st = setTimeout(function () {
+                    document.title = OriginTitile
+                }, 3e3))
+        })
+    </script>
+    <script type="text/javascript">
+        WIDGET = {FID: '1tFpFZ5Mtj'}
+    </script>
+    <script type="text/javascript" src="https://apip.weatherdt.com/float/static/js/r.js?v=1111"></script>
     
 
     
